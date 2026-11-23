@@ -1,0 +1,2282 @@
+{
+  "version": "0.1",
+  "id": "b9670982-ac74-4e8d-8355-19d2d5f55085",
+  "timestamp": "2026-11-23T13:50:32+00:00",
+  "tool": {
+    "name": "BESSER Spec-Driven Agent",
+    "version": "8.10.1"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 20,
+              "content_hash": "sha256:0f28dc29979a49dd45c6946077089c231420c6a521516e4fe6a37b416c4476c1"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 27,
+              "content_hash": "sha256:a95f3e8632b8653897eee0f03af2b905a923d10cb8000a97a3f516529f97fc35"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/README.md",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 53,
+              "content_hash": "sha256:1f9b59af496773d1d9417b53db0f0e2b0e0b5213184c3916a82c19967a289798"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 54,
+              "end_line": 88,
+              "content_hash": "sha256:4fcca480bd3069039624c49a3686f58664c57a758f2d389c7e4ed19a266ac8ac"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/.dockerignore",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 17,
+              "content_hash": "sha256:97fbf046c24a199815c055fd2ac4426934a407ed9efb3bbabe3d786724468e9d"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/Dockerfile",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 16,
+              "content_hash": "sha256:12384eecf413bbaec3629fd4f4f4e197fc045aa6517020af85954fa84fa84c3f"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/bal_stdlib.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 104,
+              "content_hash": "sha256:ea06a261d389c9c79b44997fdbe6ec1484fa4da3bee99504bdb32ed3430cd715"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/database.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 83,
+              "content_hash": "sha256:dc0bfbd3c5ab7bed66ce0e87fe3a4eaefae830e84e66876db9ddc21073b3e785"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/main_api.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 189,
+              "content_hash": "sha256:4acade3a8287a5091ceab27bcc612514ba9c5c7ec909d9543b3ea038073e290f"
+            },
+            {
+              "start_line": 192,
+              "end_line": 235,
+              "content_hash": "sha256:25e1d60c54883b4bcf575a700ebfee2c84a52e5e01146e9f14dcc358215c5b27"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 190,
+              "end_line": 191,
+              "content_hash": "sha256:8aa331884ad307f39867af2ac41cfab1e364ef7b9df2875a4dbfc47d05f88aef"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/pydantic_classes.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 80,
+              "content_hash": "sha256:950abcab86b98123b5241991e1dcf31a3d6a87ba874b45cf08c71aaf771a98c8"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/requirements.txt",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 6,
+              "content_hash": "sha256:659bd56f8b8150701992e4a514a04ba61d2b591066be3c86b5915beb1f26f28d"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/category.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 296,
+              "content_hash": "sha256:4469ff241c3418676e8646420702ccc1325cf8f3a6671333d244d51b6e44e07f"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/habit.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 327,
+              "content_hash": "sha256:ce8010c747a7b1bc581fa67cb65669ea89c32ce2f61fa06aca9a6c9797a083c8"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/habit_methods.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 1,
+              "content_hash": "sha256:c71826f50f411e2aa37dc23ce9724952818b2f3925883cf02548f69b5eb7da50"
+            },
+            {
+              "start_line": 16,
+              "end_line": 17,
+              "content_hash": "sha256:914a6f37e8a71efc02a91ed293aafd8e510befa7acc59a96b41f8eeaf5e37130"
+            },
+            {
+              "start_line": 19,
+              "end_line": 33,
+              "content_hash": "sha256:55684d688ede0fd342dd397bee572cbc27fb9ffe30b6be9cc76fffa89ad90481"
+            },
+            {
+              "start_line": 42,
+              "end_line": 42,
+              "content_hash": "sha256:90fcb36c9b82ce876f4ef854efd29bc80956add9c4a14221b57e4c84ccd30b43"
+            },
+            {
+              "start_line": 44,
+              "end_line": 62,
+              "content_hash": "sha256:1d4d7e63e7c93c20b6d90abdf999874614b68939d0797b7825dd4b4b246318b4"
+            },
+            {
+              "start_line": 64,
+              "end_line": 76,
+              "content_hash": "sha256:054776d13643cc685ca25872111a17b8d7874cb06aee8cecd49f96b0ee58d3f3"
+            },
+            {
+              "start_line": 85,
+              "end_line": 85,
+              "content_hash": "sha256:090458650ae58e8241ed6409cdf251425f69e073083d0805f44a8ff6de5cc96e"
+            },
+            {
+              "start_line": 87,
+              "end_line": 96,
+              "content_hash": "sha256:e53fe767b0e73eefc87cae21c68e821b63b1d1c47a790a98070963e6d029c7e2"
+            },
+            {
+              "start_line": 98,
+              "end_line": 99,
+              "content_hash": "sha256:e7b6eaae347fee1fc9bc17a28dbf042aaf532013df1e9ae341f8edd1c3ac6330"
+            },
+            {
+              "start_line": 101,
+              "end_line": 105,
+              "content_hash": "sha256:8cab6cd303ec568d2b48e2194c4f325fd390238a64562ffc98301c3a05a18c92"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 2,
+              "end_line": 15,
+              "content_hash": "sha256:3e7ef0daed3431bf197801dececb108c6910b51a4a28c59537daa01e966843ef"
+            },
+            {
+              "start_line": 18,
+              "end_line": 18,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 34,
+              "end_line": 41,
+              "content_hash": "sha256:7f7c8f57efac1560c7cc1db0a738a92797e405671f52a0b9cbb6e65d28ee0372"
+            },
+            {
+              "start_line": 43,
+              "end_line": 43,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 63,
+              "end_line": 63,
+              "content_hash": "sha256:80facb51a63b7db355a1aaf2ba6e05c1969e245335ff15d17fa8d543a8af033d"
+            },
+            {
+              "start_line": 77,
+              "end_line": 84,
+              "content_hash": "sha256:1848b3f47ca1dcead6f689606acab1d8e6c03d5c71432b48d8e5b86f4fd8abc7"
+            },
+            {
+              "start_line": 86,
+              "end_line": 86,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 97,
+              "end_line": 97,
+              "content_hash": "sha256:c7fecba7421afe7775a8a6a72a82f3c4f87b557c6f9786e4b342af9130361c73"
+            },
+            {
+              "start_line": 100,
+              "end_line": 100,
+              "content_hash": "sha256:80facb51a63b7db355a1aaf2ba6e05c1969e245335ff15d17fa8d543a8af033d"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/progressentry.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 274,
+              "content_hash": "sha256:14b5ef7f420b4f36febc4ae82fbb35da64fe5a5e5544d211cf06f0b88965d05b"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/progressentry_methods.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 20,
+              "content_hash": "sha256:486af2ab19619ad4debb0349e8983259518ecf600ffdccac0cccccd1ff809a10"
+            },
+            {
+              "start_line": 22,
+              "end_line": 22,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 49,
+              "end_line": 49,
+              "content_hash": "sha256:e14a61a99d7050d3727191365f08caf1c486806773c6d2bfd8c88ea601e1f0e5"
+            },
+            {
+              "start_line": 63,
+              "end_line": 70,
+              "content_hash": "sha256:e869f2444076a0a0c45f721942549cb9a52a80fa39f0d00ec87db4cfffa90b33"
+            },
+            {
+              "start_line": 72,
+              "end_line": 72,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 82,
+              "end_line": 82,
+              "content_hash": "sha256:c7fecba7421afe7775a8a6a72a82f3c4f87b557c6f9786e4b342af9130361c73"
+            },
+            {
+              "start_line": 85,
+              "end_line": 85,
+              "content_hash": "sha256:e14a61a99d7050d3727191365f08caf1c486806773c6d2bfd8c88ea601e1f0e5"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 21,
+              "end_line": 21,
+              "content_hash": "sha256:3502caa9bd48ca6aa58ea8d1fd85bf5178035fa6c6d52c16fe4d621617f2793b"
+            },
+            {
+              "start_line": 23,
+              "end_line": 48,
+              "content_hash": "sha256:c119bcdb40edf8ecf73ba6c5c8c4a4e81075bdb55be32dc8c18e37b78388d5fd"
+            },
+            {
+              "start_line": 50,
+              "end_line": 62,
+              "content_hash": "sha256:92c003030e922d315b974b22e4bd3417d7c14ee32f82fe928107f66918d629fc"
+            },
+            {
+              "start_line": 71,
+              "end_line": 71,
+              "content_hash": "sha256:1bdd727349bddbb2e028e87a7b3af2631836930f34080ae2fd4e00adb3b26861"
+            },
+            {
+              "start_line": 73,
+              "end_line": 81,
+              "content_hash": "sha256:64c9ee856418fba69127c6142fc69e37b58418642b5cc93b638740817a38792c"
+            },
+            {
+              "start_line": 83,
+              "end_line": 84,
+              "content_hash": "sha256:e5db62e1ad6b45ada133f22ea1d106e83ad624a88f1745655b8fb893af942236"
+            },
+            {
+              "start_line": 86,
+              "end_line": 97,
+              "content_hash": "sha256:e30799d5f14ae737ad1e95d84a692bb4b5caa6b11639a38a4a47388affc5a70e"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/resolution.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 401,
+              "content_hash": "sha256:ddc291f39e227781c1416dbfa9ec96be5577517288c98e637fca43ad3518248a"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/resolution_methods.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 1,
+              "content_hash": "sha256:c71826f50f411e2aa37dc23ce9724952818b2f3925883cf02548f69b5eb7da50"
+            },
+            {
+              "start_line": 16,
+              "end_line": 21,
+              "content_hash": "sha256:492a095efe058d6022555d0b583890c240829098992a102a39dc60a34b56ceda"
+            },
+            {
+              "start_line": 23,
+              "end_line": 28,
+              "content_hash": "sha256:0fe434da4ab09085cc40f915cec3ed29ea786f0ed0284609ff1ad979de8275a0"
+            },
+            {
+              "start_line": 37,
+              "end_line": 37,
+              "content_hash": "sha256:ddffea53930a74ff8091a0c5e721a3607823763ce6d95832da6f8ebaf888b768"
+            },
+            {
+              "start_line": 39,
+              "end_line": 50,
+              "content_hash": "sha256:d34e70bb33cdb9802ca9ff6fb6dfec4d10e6f29b18b73db3e0dd01f966ca6d88"
+            },
+            {
+              "start_line": 52,
+              "end_line": 61,
+              "content_hash": "sha256:a003321e76ec3ab0eb9bd0dfeb3d3f98075ee046d187cd97aa0ac9e60d2474b9"
+            },
+            {
+              "start_line": 70,
+              "end_line": 70,
+              "content_hash": "sha256:b41698d6efd8c082cee2fc657260a457cbf44417a3ab2d30019b1543de596f54"
+            },
+            {
+              "start_line": 72,
+              "end_line": 83,
+              "content_hash": "sha256:8f53ba6f1d0eaf7d60c5b8cc32b34a09afd07e3b153059c6e0a3edd8815c1ed6"
+            },
+            {
+              "start_line": 85,
+              "end_line": 94,
+              "content_hash": "sha256:f176908875bec428a728691fe522c5bf5f35ec28f49503f91c6afc0ae9ebed7b"
+            },
+            {
+              "start_line": 103,
+              "end_line": 103,
+              "content_hash": "sha256:014bf021c7ff7c6302b3e69a7d42ba88cd5de95bcf95de2cf86e585be64425a5"
+            },
+            {
+              "start_line": 105,
+              "end_line": 116,
+              "content_hash": "sha256:322a60cfbf97c5ebb4a5429f7d7d6b5e46bdbaccb8c257519aa0db33839f731e"
+            },
+            {
+              "start_line": 118,
+              "end_line": 127,
+              "content_hash": "sha256:40f64befb899b8724cc4e229b695711775aa5795ab16fa1c8adc974d5e8a4ddc"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 2,
+              "end_line": 15,
+              "content_hash": "sha256:5a28866a93eb263870bfb75fb8bf5c955f7c8e5af2e8e1fb249bf4398985258a"
+            },
+            {
+              "start_line": 22,
+              "end_line": 22,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 29,
+              "end_line": 36,
+              "content_hash": "sha256:3f80ac370c752bc616f7006807fb73cec5306d230c8e6b08f8a883978afd4221"
+            },
+            {
+              "start_line": 38,
+              "end_line": 38,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 51,
+              "end_line": 51,
+              "content_hash": "sha256:c7fecba7421afe7775a8a6a72a82f3c4f87b557c6f9786e4b342af9130361c73"
+            },
+            {
+              "start_line": 62,
+              "end_line": 69,
+              "content_hash": "sha256:61cfad41a7b6075e44176aac9e86908757a3cd031ccca7049739d456ecba795e"
+            },
+            {
+              "start_line": 71,
+              "end_line": 71,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 84,
+              "end_line": 84,
+              "content_hash": "sha256:c7fecba7421afe7775a8a6a72a82f3c4f87b557c6f9786e4b342af9130361c73"
+            },
+            {
+              "start_line": 95,
+              "end_line": 102,
+              "content_hash": "sha256:a02ab9d9b992297ead85487d63abe8f86010c4fa7845297f79ff71824aaf83c0"
+            },
+            {
+              "start_line": 104,
+              "end_line": 104,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 117,
+              "end_line": 117,
+              "content_hash": "sha256:c7fecba7421afe7775a8a6a72a82f3c4f87b557c6f9786e4b342af9130361c73"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/subgoal.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 240,
+              "content_hash": "sha256:4cd37cc86d842b24e582d325ed736ebee69532ed6afa2464d59a39a4561b18b5"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/subgoal_methods.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 20,
+              "content_hash": "sha256:6d8d273e7eeab5a6060ef12dac514af1230382b88114525cccad10de05a6dfd6"
+            },
+            {
+              "start_line": 22,
+              "end_line": 22,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 36,
+              "end_line": 36,
+              "content_hash": "sha256:c7fecba7421afe7775a8a6a72a82f3c4f87b557c6f9786e4b342af9130361c73"
+            },
+            {
+              "start_line": 39,
+              "end_line": 39,
+              "content_hash": "sha256:18e6a695de6a66ba68f385596e9d920f5dd62b3fce3f014eed2c69b812c41f5c"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 21,
+              "end_line": 21,
+              "content_hash": "sha256:9ac35629bcd5346597257cc4fb08d57ab5481ae7f3ef82ea6a7621695b4a4042"
+            },
+            {
+              "start_line": 23,
+              "end_line": 35,
+              "content_hash": "sha256:6d910bff84e24bcdc724d28675a3a337ddbf428f2418c9f3c9dc9ac429fd7b75"
+            },
+            {
+              "start_line": 37,
+              "end_line": 38,
+              "content_hash": "sha256:ebf72609b93da6bcb974892001dd8f7d0ef3fc5bf898c1bf50e9455b806b7aa8"
+            },
+            {
+              "start_line": 40,
+              "end_line": 48,
+              "content_hash": "sha256:91e947bb86939d78968a77d57de7856fbb8a5575d2b5cd97dc09c71beeaa1586"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/user.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 427,
+              "content_hash": "sha256:4d503ccd3efde65333657c65eca7979a4dbcd21a3fff1d8ecd6f5b7871f288d5"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/routers/user_methods.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 1,
+              "content_hash": "sha256:c71826f50f411e2aa37dc23ce9724952818b2f3925883cf02548f69b5eb7da50"
+            },
+            {
+              "start_line": 22,
+              "end_line": 22,
+              "content_hash": "sha256:f30551e893f6cfc24005060b94f43525e174bf7a6350e36fe71e73f270e561d1"
+            },
+            {
+              "start_line": 24,
+              "end_line": 48,
+              "content_hash": "sha256:cab3219f414fa38ef9d0c4a050149055b4e030dadf13743574a79c92a9bc9541"
+            },
+            {
+              "start_line": 50,
+              "end_line": 103,
+              "content_hash": "sha256:e4e53f2e4c6316ec7f882b7ca53e522183e4a8f0f8e6f22db7a5e3653e720597"
+            },
+            {
+              "start_line": 105,
+              "end_line": 109,
+              "content_hash": "sha256:4443182927c97a8ec8e313133fed622510f6108e50423ce18cc1bc997a0c0725"
+            },
+            {
+              "start_line": 118,
+              "end_line": 118,
+              "content_hash": "sha256:7d7bc2ab4f97738d856d1932ca1b99c143c79611e46024a1f6922ed150a1896b"
+            },
+            {
+              "start_line": 120,
+              "end_line": 138,
+              "content_hash": "sha256:f160ee96cf0e9cb69b79d76b5c93e203b8b8af2e62cc228f0e4f0a95c3a12cf2"
+            },
+            {
+              "start_line": 141,
+              "end_line": 152,
+              "content_hash": "sha256:ad5f947abbf1f8a681d4ce28a3d2015b4066924e5663fa9475d0783ec0bf7b70"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 2,
+              "end_line": 21,
+              "content_hash": "sha256:43279373e2ab803d1786a596916fd165fd211cc0ff39a28567c46b767f464b67"
+            },
+            {
+              "start_line": 23,
+              "end_line": 23,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 49,
+              "end_line": 49,
+              "content_hash": "sha256:46721348b9dcabe6613820ba324f1ecc6e2c5a9fcce6ecea09fc67c158d227e0"
+            },
+            {
+              "start_line": 104,
+              "end_line": 104,
+              "content_hash": "sha256:ff19446752c33c181ea9232a795beff15bc3feedd2a58087b3f5c33eeb62e992"
+            },
+            {
+              "start_line": 110,
+              "end_line": 117,
+              "content_hash": "sha256:f936d430f3dbd8f51d302749d4e0ec5d10e7697b2be95886306ad9239d634f90"
+            },
+            {
+              "start_line": 119,
+              "end_line": 119,
+              "content_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "start_line": 139,
+              "end_line": 140,
+              "content_hash": "sha256:c0f462c8adec8deff328a47aa986283452a25b4e77ac740cd33dd751dd46013c"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/backend/sql_alchemy.py",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 87,
+              "content_hash": "sha256:dfdd71ee36fd35f5729b77fca914d0a1548f3e5be4d02386da0d758fcbda23b7"
+            },
+            {
+              "start_line": 126,
+              "end_line": 134,
+              "content_hash": "sha256:65e7bca3efd5e4e4882f36cc6a9a8cf63395d3ebe435cb35c60d3b482da7b3c3"
+            },
+            {
+              "start_line": 150,
+              "end_line": 162,
+              "content_hash": "sha256:a0f12fa127e25d2e3ab512608e5efe6a0496da49a2689f1eb2318e3edf966082"
+            },
+            {
+              "start_line": 209,
+              "end_line": 217,
+              "content_hash": "sha256:d3d21c0485d37072f81a5894cee97d4d3eb7866c8563974dbd471aaec82240e5"
+            },
+            {
+              "start_line": 254,
+              "end_line": 265,
+              "content_hash": "sha256:bb252b9cf29a16d5344751ab5c154833839a2c2f87e541e3ce4b2ebae01d88ff"
+            },
+            {
+              "start_line": 299,
+              "end_line": 351,
+              "content_hash": "sha256:f71dec9cfa9b663ec51287bce7d2357b61d381592ee4370a535955742b732864"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 88,
+              "end_line": 125,
+              "content_hash": "sha256:eed7e58cddae911b5375714144f1349674dbcb24a4e7a4a3dc1c1d3bf3d407ff"
+            },
+            {
+              "start_line": 135,
+              "end_line": 149,
+              "content_hash": "sha256:64557be324eb548e4c4e3053fc32b4ccc839327692e3bbc25fc3116ad0df5602"
+            },
+            {
+              "start_line": 163,
+              "end_line": 208,
+              "content_hash": "sha256:4be5ebc46288e01d0b969aa2d805e1e367d6d854b813dd202affdc76e6ae4ef7"
+            },
+            {
+              "start_line": 218,
+              "end_line": 253,
+              "content_hash": "sha256:f08956935301e100382c0ab5871cdbc2f536bffbb07109e0f7fdb46347790a30"
+            },
+            {
+              "start_line": 266,
+              "end_line": 298,
+              "content_hash": "sha256:3b3eb6903b754c0376fa44fea01329211d1051faccb2ae4f6a49d92fe31b1ab1"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/docker-compose.yml",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 29,
+              "content_hash": "sha256:c07ca1e520bdb03f2000ce7161e7c0110c6619509b60cdfb2df6cd62f0f10629"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/.dockerignore",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 17,
+              "content_hash": "sha256:df58296ad3e5262c9004d72974e4779709c187c96e5cda4731d3cb4acfa08160"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/.gitignore",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 23,
+              "content_hash": "sha256:e4cbbecb6adb9db745352546bfb9723f1c5c53bb4f7e07be128198540ecbc08e"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/Dockerfile",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 20,
+              "content_hash": "sha256:41076adc5e6b07ee7ae1373ebb14031507568c7b00d23fabfb9013f44234f723"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/README.md",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 28,
+              "content_hash": "sha256:8d0ffe48f9ac553fdbc80394ec476c6d384fba5f6a73c7ebd0d7b6a491944f31"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/index.html",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 16,
+              "content_hash": "sha256:b40d8178e2339bdae2ea127ee39b0d5ef509bbd1d712f961bd2decc9e35f2aa3"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/package-lock.json",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 3168,
+              "content_hash": "sha256:e823b2f56428c2581ddcb6385843a6be8a8b362b4f3e6bb2c46c689709eac0fb"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/package.json",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 41,
+              "content_hash": "sha256:e34a36d648fa907cb7a3a62a7e61c04bd97265257db61720dfb68325fec108be"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/App.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 29,
+              "content_hash": "sha256:aa1e5d20d791fe888edcb17bad37339f1985b7752565247b27a0efae4e1f9a35"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/InputComponents.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 423,
+              "content_hash": "sha256:f8b1fde65bd51d1b1a14c689888bb0038dda84b4f311322cb314c1bd98b044c9"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/MethodButton.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 904,
+              "content_hash": "sha256:376ae1999d34fc72f369945504c4aa939bcfac4d1c2a77a83063fc9210b39e52"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/charts/BarChartComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 218,
+              "content_hash": "sha256:79653e8d177d503aa7549a6a7e6a5c7e4784868fa656801281f41080d435b89e"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/charts/LineChartComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 258,
+              "content_hash": "sha256:c39f66094172375edb6952e1ec4bcde3a6d7e10b84e39f428612cd8bb9088ce6"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/charts/MetricCardComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 155,
+              "content_hash": "sha256:02f1837afc5fff97f9c16b74d7c86f158f22958393baafe41f862d7bd1f5a468"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/charts/PieChartComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 175,
+              "content_hash": "sha256:da40604336fb71e99632a47df4c30aed4f8511b4864efa140024b2e8b3238422"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/charts/RadarChartComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 174,
+              "content_hash": "sha256:0f0f743eb081c025b8cb8a1e9cfe2399d9151ee721c1a7c4b657758be8b4a20e"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/charts/RadialBarChartComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 136,
+              "content_hash": "sha256:b05e86e531a632dabceca9eecf3cc64973df0820e41c39069ccaf9140665d339"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/ChartBlock.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 317,
+              "content_hash": "sha256:6c82bc8a23e56bfbd2e7c27213259167f83c0a3d1598848ef6833cb66bf12b56"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/CrudButton.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 68,
+              "content_hash": "sha256:51ac5c6c6314d61714a76087b229309605a3a1129be652df82ce3bf5dc626e58"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/DataListBlock.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 51,
+              "content_hash": "sha256:f16e8536af7dfb08444421f0dd9e37d9b6d4dd500d273a61fc22266a53555ad6"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/FormBlock.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 128,
+              "content_hash": "sha256:4b7f051114fedd408c7e096b4448ee16899fd4650b131dc77c24fb19d48caa43"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/LookupSelect.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 48,
+              "content_hash": "sha256:523feb8c6856e53f0e29d5a819a77b11a44d582329ac353000d445a84854a418"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/MetricCardBlock.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 75,
+              "content_hash": "sha256:f2b7f0c99b15a5443e473f554a6428b0f4b8b92cf0d0fffe1e55e061893b7cf5"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/TableBlock.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 94,
+              "content_hash": "sha256:9c2f78d7720c878a077577abb7a6ead988ee4e1f2e14b9045a4a360b03827b00"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/aggregate.ts",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 55,
+              "content_hash": "sha256:d3a6440992c30da1bfae9c85d38ba4afb040cf993d834b034db3b53a297d1677"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/bindingData.ts",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 398,
+              "content_hash": "sha256:582d1ec10967bcbcafac00f09fa0bbb7a42974ad9cc324e0d5e7420acb866324"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/dataVersion.ts",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 23,
+              "content_hash": "sha256:222fc375ce67794d3043ae7e8a96d3a0c6e85fe485bf75536f684cde597f9b8b"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/runtime/lookup.ts",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 47,
+              "content_hash": "sha256:3c05c846ed9714ede5ad67c154d28a0c0e97c96a8a9290ab93d5ab268c515c5f"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/table/ColumnFilter.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 307,
+              "content_hash": "sha256:16f5daed85f49cf766cb6b43a1217e80fc4449e954f34fbdffed2ed89ea7ff96"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/table/ColumnSort.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 41,
+              "content_hash": "sha256:ecb3c72ce4ddcedacbda6ec440e85bc9e75f797b5391da866926cfbbe9a6aff1"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/table/TableComponent.css",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 70,
+              "content_hash": "sha256:8d1a300d78a686babb865636851652b9e52d2701d3fb0fc370221d8c15beadbe"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/components/table/TableComponent.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 1877,
+              "content_hash": "sha256:e9238c8dbc2dc7685116d6e6f7b96a51456b36a74de213c918cc9e0699a3f680"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/contexts/TableContext.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 111,
+              "content_hash": "sha256:c8a23b27f0308afbfa87d5916c9dcac1cebfd3dc73ad4a759ca4f2170c3002d1"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/design.css",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 92,
+              "content_hash": "sha256:94baf3b4f8866df89d5138bb28cce59c0a79945535c670f7a12a81bfc6c278cc"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/index.css",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 18,
+              "content_hash": "sha256:a904b72a7272c3a4b6b136bc9f54b22a0035fab473486a14693c628999dc997b"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/index.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 17,
+              "content_hash": "sha256:cdfe52e392230b2947fbd75fd98d66ee8061f862828f338fb740045f2e9ac66b"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/pages/CategoriesProfile.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 323,
+              "content_hash": "sha256:9ed464aa4ef00ce703dd043410d403e57011439bf096ba8c10c5662f0c1ee609"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/pages/Dashboard.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 333,
+              "content_hash": "sha256:0e9c9d841ec9a0d4bc0af3f56d5a217e9a23c85f61a6b57b207ab060ecb5127d"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/pages/Habits.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 2,
+              "content_hash": "sha256:6eb57237aa108b6a7957360ab9960b9fa0dd3ee11dab8ec41f72e61f5784fe97"
+            },
+            {
+              "start_line": 6,
+              "end_line": 8,
+              "content_hash": "sha256:ef09183097c5bb076e08d9f75829c6c09dd81bbd441c023a56d499c95cc167d6"
+            },
+            {
+              "start_line": 12,
+              "end_line": 56,
+              "content_hash": "sha256:856395371d2d38fae623dffa324ee0920675a5a5f176c3d4435939b7cf655bfe"
+            },
+            {
+              "start_line": 311,
+              "end_line": 311,
+              "content_hash": "sha256:138e0a544d3fdfef550d8570c757f674a1782b67435a01745b91072c55c014d4"
+            },
+            {
+              "start_line": 314,
+              "end_line": 314,
+              "content_hash": "sha256:425521796d3bc2daeffa316eb33247c6edf271d684431e522916964c0832f7f7"
+            },
+            {
+              "start_line": 317,
+              "end_line": 324,
+              "content_hash": "sha256:87e4f413b0682adee76cc633c3e299f8abca8a07c664feed9068c46e384d6df3"
+            },
+            {
+              "start_line": 328,
+              "end_line": 328,
+              "content_hash": "sha256:7ade4376300d6c0ca78df3de4d6134301a0a7c27f24bc8cc14ecdb7576685c8f"
+            },
+            {
+              "start_line": 331,
+              "end_line": 332,
+              "content_hash": "sha256:14c648e9dde02eaf894026705413104d85e290693c28b9dbac42edf304f96ba8"
+            },
+            {
+              "start_line": 334,
+              "end_line": 345,
+              "content_hash": "sha256:954e0141d98142d4c7a6d45c10544ac0955f57ad59c9c177b1f359c8d672fad7"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 3,
+              "end_line": 5,
+              "content_hash": "sha256:23753574ad834ed2868bd40b0d9c7e780b7c746e22a8d8c705f105a0eb5fc6bb"
+            },
+            {
+              "start_line": 9,
+              "end_line": 11,
+              "content_hash": "sha256:e626bcc2afba127af7acb80cdab02fcdb92a58aa4bfdb0aeac652e7c5ca3c44d"
+            },
+            {
+              "start_line": 57,
+              "end_line": 310,
+              "content_hash": "sha256:5dcecc059f4f4539c3684b05b8362e7c6582f26dd98f1916cf54c6eba7337d27"
+            },
+            {
+              "start_line": 312,
+              "end_line": 313,
+              "content_hash": "sha256:43032a6b23abe6cfee7ee850b441d612194a73e9fca3b7761a07d5acb1e12c9c"
+            },
+            {
+              "start_line": 315,
+              "end_line": 316,
+              "content_hash": "sha256:13b0d44b19dd9d1375dade45305f44f3dd24f9f4ede4bbf5870c6e66c4b6f6ea"
+            },
+            {
+              "start_line": 325,
+              "end_line": 327,
+              "content_hash": "sha256:390399ff8d86f8a97be2d5c67f0dccd0593f333b8579638a728fba95e4eb4f9c"
+            },
+            {
+              "start_line": 329,
+              "end_line": 330,
+              "content_hash": "sha256:13b0d44b19dd9d1375dade45305f44f3dd24f9f4ede4bbf5870c6e66c4b6f6ea"
+            },
+            {
+              "start_line": 333,
+              "end_line": 333,
+              "content_hash": "sha256:df1f9fa56d55e21212695794f5beb88017d129f986adaae74bed63e77a78ed17"
+            },
+            {
+              "start_line": 346,
+              "end_line": 353,
+              "content_hash": "sha256:1e0c15b3d683bf70a8568ea46c9085347e4f969f159dfb6518fdfc009500c43a"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/pages/ResolutionDetail.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 491,
+              "content_hash": "sha256:6920763377955b04f75b669420a4bc0e189c5fc365bd29b9cbc698e83f11d7d7"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/pages/Resolutions.tsx",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "ai",
+            "model_id": "free"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 2,
+              "content_hash": "sha256:6eb57237aa108b6a7957360ab9960b9fa0dd3ee11dab8ec41f72e61f5784fe97"
+            },
+            {
+              "start_line": 6,
+              "end_line": 8,
+              "content_hash": "sha256:ef09183097c5bb076e08d9f75829c6c09dd81bbd441c023a56d499c95cc167d6"
+            },
+            {
+              "start_line": 12,
+              "end_line": 56,
+              "content_hash": "sha256:b23572b916ad35a48112141228ae0ecb3e50eb6f45a2f02e98964d3ad63b4ecd"
+            },
+            {
+              "start_line": 316,
+              "end_line": 316,
+              "content_hash": "sha256:bd4660f16bc217c33c1a28cc421d81632f5c03d81125916391badc58637da609"
+            },
+            {
+              "start_line": 319,
+              "end_line": 319,
+              "content_hash": "sha256:1a8cb22a8bc187081e84e6b706a80bb34b1d48130072007c43f9856f9915df4e"
+            },
+            {
+              "start_line": 323,
+              "end_line": 323,
+              "content_hash": "sha256:9464a5bd1091812f4156a8d01e1859d7933313aeeb714188fff67b4557e79cbc"
+            },
+            {
+              "start_line": 327,
+              "end_line": 327,
+              "content_hash": "sha256:f98591bbe76f8a6d22c3230c33fcb46e15d223568cd77998b585962204e876cf"
+            },
+            {
+              "start_line": 329,
+              "end_line": 340,
+              "content_hash": "sha256:cb04a5a1feb5559947e7239c9b78d9fd8c11242aa586a21c4e7b87164d985063"
+            }
+          ],
+          "related": [
+            {
+              "type": "session",
+              "url": "urn:besser:run:799951a0ae8341fc95649b1b50130980"
+            }
+          ]
+        },
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 3,
+              "end_line": 5,
+              "content_hash": "sha256:23753574ad834ed2868bd40b0d9c7e780b7c746e22a8d8c705f105a0eb5fc6bb"
+            },
+            {
+              "start_line": 9,
+              "end_line": 11,
+              "content_hash": "sha256:094867fd1a3ba794fb05d9335167d00fec2abe38e596eddbfd6653b0eaacbf6f"
+            },
+            {
+              "start_line": 57,
+              "end_line": 315,
+              "content_hash": "sha256:d26fcb79ddcbfd6f30edf518657280c5bd0fa5477298ecb147c395c9b4423b56"
+            },
+            {
+              "start_line": 317,
+              "end_line": 318,
+              "content_hash": "sha256:e2a50c8bfdd6d4d0cecff2cf8f71a5e948bc2b7807170cfe7f7525d8eaf24a73"
+            },
+            {
+              "start_line": 320,
+              "end_line": 322,
+              "content_hash": "sha256:327fbd31323477bcbfc6468139efb389993fef38907a9ed6bf693813c793937b"
+            },
+            {
+              "start_line": 324,
+              "end_line": 326,
+              "content_hash": "sha256:f1321b9ae2b5071aed38aa77295d778043b0fad0ed577c64ba833de963673126"
+            },
+            {
+              "start_line": 328,
+              "end_line": 328,
+              "content_hash": "sha256:df1f9fa56d55e21212695794f5beb88017d129f986adaae74bed63e77a78ed17"
+            },
+            {
+              "start_line": 341,
+              "end_line": 348,
+              "content_hash": "sha256:38e8d499c663321a2ac643d589794c5080a1639f9e5e8bd90dda3416156bef3b"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/src/react-app-env.d.ts",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 9,
+              "content_hash": "sha256:fd0952353637e6a2d34aa53c167f5fc0f5968bec87eae6c9a0870715882f8b9d"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/tsconfig.json",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 29,
+              "content_hash": "sha256:4b89e13060d4c38e47802e571d1c98729de0dc8806c3a4a8ef10e505270fcc1b"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "web_app/frontend/vite.config.ts",
+      "conversations": [
+        {
+          "contributor": {
+            "type": "unknown"
+          },
+          "ranges": [
+            {
+              "start_line": 1,
+              "end_line": 14,
+              "content_hash": "sha256:f5af9e4652479e7acb2779ddc180fd386e57e912e90659793955467a5239e353"
+            }
+          ],
+          "related": [
+            {
+              "type": "generator",
+              "url": "urn:besser:generator:web_app@8.10.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "org.besser-pearl": {
+      "run_id": "799951a0ae8341fc95649b1b50130980",
+      "lines": {
+        "generator": 11119,
+        "ai": 3953,
+        "human": 0,
+        "unknown": 0
+      },
+      "base_generator": "generate_web_app",
+      "model_id": "free"
+    }
+  }
+}

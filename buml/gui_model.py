@@ -195,608 +195,972 @@ from besser.utilities.buml_code_builder.common import (
 
 # Module: GUI_Module
 
-# Screen: wrapper
-wrapper = Screen(name="wrapper", description="Dashboard", view_elements=set(), is_main_page=True, route_path="/dashboard", screen_size="Medium")
-wrapper_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
-wrapper_styling_pos = Position()
-wrapper_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
-wrapper_styling = Styling(size=wrapper_styling_size, position=wrapper_styling_pos, color=wrapper_styling_color)
-wrapper.styling = wrapper_styling
-wrapper.component_id = "page-dashboard"
-text = Text(
-    name="text",
+# Screen: i4bmm1
+i4bmm1 = Screen(name="i4bmm1", description="Categories & Profile", view_elements=set(), route_path="/categories-profile", screen_size="Medium")
+i4bmm1_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
+i4bmm1_styling_pos = Position()
+i4bmm1_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
+i4bmm1_styling = Styling(size=i4bmm1_styling_size, position=i4bmm1_styling_pos, color=i4bmm1_styling_color)
+i4bmm1.styling = i4bmm1_styling
+i4bmm1.component_id = "page-categories-profile"
+ia7sgz = Text(
+    name="ia7sgz",
     content="Stride",
     description="Text element",
     styling=Styling(size=Size(font_size="1.25rem", font_weight="700", letter_spacing="-0.01em"), color=Color(text_color="#23213a", color_palette="default")),
-    display_order=0
+    component_id="ia7sgz",
+    display_order=0,
+    custom_attributes={"id": "ia7sgz"}
 )
-link = Link(
-    name="link",
+iheo7o = Link(
+    name="iheo7o",
     description="Link element",
     label="Dashboard",
     url="/dashboard",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="iheo7o",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard"}
+    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard", "id": "iheo7o"}
 )
-link_2 = Link(
-    name="link_2",
+i3pu16 = Link(
+    name="i3pu16",
     description="Link element",
     label="Resolutions",
     url="/resolutions",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i3pu16",
     tag_name="a",
     display_order=1,
-    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions"}
+    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions", "id": "i3pu16"}
 )
-link_3 = Link(
-    name="link_3",
+i6504e = Link(
+    name="i6504e",
     description="Link element",
     label="Resolution Detail",
     url="/resolution-detail",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i6504e",
     tag_name="a",
     display_order=2,
-    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail"}
+    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail", "id": "i6504e"}
 )
-link_4 = Link(
-    name="link_4",
+i53lcl = Link(
+    name="i53lcl",
     description="Link element",
     label="Habits",
     url="/habits",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i53lcl",
     tag_name="a",
     display_order=3,
-    custom_attributes={"href": "/habits", "data-navigate-to": "habits"}
+    custom_attributes={"href": "/habits", "data-navigate-to": "habits", "id": "i53lcl"}
 )
-link_5 = Link(
-    name="link_5",
+i3lbae = Link(
+    name="i3lbae",
     description="Link element",
     label="Categories & Profile",
     url="/categories-profile",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    component_id="i3lbae",
     tag_name="a",
     display_order=4,
-    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile"}
+    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile", "id": "i3lbae"}
 )
-component = ViewContainer(
-    name="Component",
+ifxfhl = ViewContainer(
+    name="ifxfhl",
     description=" component",
-    view_elements={link, link_2, link_3, link_4, link_5},
+    view_elements={iheo7o, i3pu16, i6504e, i53lcl, i3lbae},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")),
-    display_order=1
+    component_id="ifxfhl",
+    display_order=1,
+    custom_attributes={"id": "ifxfhl"}
 )
-component_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
-component.layout = component_layout
-nav = ViewContainer(
-    name="nav",
+ifxfhl_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
+ifxfhl.layout = ifxfhl_layout
+icyl7o = ViewContainer(
+    name="icyl7o",
     description="nav container",
-    view_elements={text, component},
+    view_elements={ia7sgz, ifxfhl},
     styling=Styling(size=Size(height="64px", padding="0 32px", font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif"), position=Position(p_type=PositionType.STICKY, top="0", z_index=50, display="flex"), color=Color(background_color="#ffffff", color_palette="default", border_bottom="1px solid #e8e5f0", box_shadow="0 1px 3px rgba(0,0,0,0.06)"), layout=Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")),
-    component_id="container_nav",
+    component_id="icyl7o",
     tag_name="nav",
     display_order=0,
-    css_classes=["assistant-nav-header"]
+    css_classes=["assistant-nav-header"],
+    custom_attributes={"id": "icyl7o"}
 )
-nav_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
-nav.layout = nav_layout
-p = Text(
-    name="p",
-    content="YOUR SPACE TO GROW",
+icyl7o_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
+icyl7o.layout = icyl7o_layout
+p_21 = Text(
+    name="p_21",
+    content="MAKE IT YOURS",
     description="Text element",
     tag_name="p",
     display_order=0,
     css_classes=["app-eyebrow"]
 )
-h1 = Text(
-    name="h1",
-    content="Make the next step count.",
+h1_5 = Text(
+    name="h1_5",
+    content="Your space, organized.",
     description="Text element",
     tag_name="h1",
     display_order=1
 )
-p_2 = Text(
-    name="p_2",
-    content="See your goals, keep your habits close, and make progress visible.",
+p_22 = Text(
+    name="p_22",
+    content="Keep your goal categories and account details together.",
     description="Text element",
     tag_name="p",
     display_order=2
 )
-div = ViewContainer(
-    name="div",
-    description="div container",
-    view_elements={p, h1, p_2},
-    component_id="container_div",
-    tag_name="div",
+component_35 = ViewContainer(
+    name="Component_35",
+    description=" component",
+    view_elements={p_21, h1_5, p_22},
     display_order=0
 )
-a = Text(
-    name="a",
-    content="Manage resolutions",
+a_10 = Text(
+    name="a_10",
+    content="Back to overview",
     description="Text element",
     tag_name="a",
     display_order=1,
-    css_classes=["ds-btn", "ds-btn-primary"],
-    custom_attributes={"href": "/resolutions"}
+    css_classes=["app-link"],
+    custom_attributes={"href": "/dashboard"}
 )
-header = ViewContainer(
-    name="header",
+header_5 = ViewContainer(
+    name="header_5",
     description="header container",
-    view_elements={div, a},
-    component_id="container_header",
+    view_elements={component_35, a_10},
+    component_id="container_header_5",
     tag_name="header",
     display_order=0,
     css_classes=["app-head"]
 )
-h2 = Text(
-    name="h2",
-    content="Momentum starts here",
-    description="Text element",
-    tag_name="h2",
-    display_order=0
-)
-p_3 = Text(
-    name="p_3",
-    content="Make room for the small actions that move your bigger goals forward.",
-    description="Text element",
-    tag_name="p",
-    display_order=1
-)
-div_2 = ViewContainer(
-    name="div_2",
-    description="div container",
-    view_elements={h2, p_3},
-    component_id="container_div_2",
-    tag_name="div",
-    display_order=0
-)
-a_2 = Text(
-    name="a_2",
-    content="Check your habits →",
-    description="Text element",
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/habits"}
-)
-section = ViewContainer(
-    name="section",
-    description="section container",
-    view_elements={div_2, a_2},
-    component_id="container_section",
-    tag_name="section",
-    display_order=1,
-    css_classes=["app-band"]
-)
-h2_2 = Text(
-    name="h2_2",
-    content="Your overview",
+h2_15 = Text(
+    name="h2_15",
+    content="Categories",
     description="Text element",
     tag_name="h2",
     display_order=0,
     css_classes=["app-section-title"]
 )
-p_4 = Text(
-    name="p_4",
-    content="A live snapshot of your goals and routines.",
+p_23 = Text(
+    name="p_23",
+    content="Organize resolutions with names and colors that make sense to you.",
     description="Text element",
     tag_name="p",
     display_order=1,
     css_classes=["app-section-sub"]
 )
-metric_card = MetricCard(
-    name="metric_card",
-    metric_title="Total resolutions",
-    format="number",
-    value_color="#2c3e50",
-    value_size=32,
-    show_trend=True,
-    positive_color="#27ae60",
-    negative_color="#e74c3c",
+table_category_categories_profile_col_0 = FieldColumn(label="Name", field=Category_name)
+table_category_categories_profile_col_1 = FieldColumn(label="Color hex", field=Category_colorHex)
+table_category_categories_profile_col_2 = FieldColumn(label="Created at", field=Category_createdAt)
+table_category_categories_profile = Table(
+    name="table_category_categories_profile",
+    title="Goal categories and colors",
     primary_color="#2c3e50",
-    styling=Styling(size=Size(width="100%", margin="8px 0", min_height="140px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default")),
-    display_order=0,
-    css_classes=["metric-card-component"],
-    custom_attributes={"metric-title": "Total resolutions", "value-color": "#2c3e50", "value-size": "32", "show-trend": "true", "positive-color": "#27ae60", "negative-color": "#e74c3c", "format": "number", "data-source": "class_gguigpgu0_mwta93ho_wma", "aggregation": "count"}
-)
-metric_card_binding = None
-try:
-    metric_card_binding = build_data_binding(domain_model, "Resolution", name="Total_resolutions_binding", aggregation="count")
-except NameError:
-    pass
-metric_card.data_binding = metric_card_binding
-div_3 = ViewContainer(
-    name="div_3",
-    description="div container",
-    view_elements={metric_card},
-    component_id="container_div_3",
-    tag_name="div",
-    display_order=2,
-    css_classes=["app-panel"]
-)
-section_2 = ViewContainer(
-    name="section_2",
-    description="section container",
-    view_elements={h2_2, p_4, div_3},
-    component_id="container_section_2",
-    tag_name="section",
-    display_order=2,
-    css_classes=["app-wrap"]
-)
-h2_3 = Text(
-    name="h2_3",
-    content="Goals in motion",
-    description="Text element",
-    tag_name="h2",
-    display_order=0,
-    css_classes=["app-section-title"]
-)
-metric_card_2 = MetricCard(
-    name="metric_card_2",
-    metric_title="Active resolutions",
-    format="number",
-    value_color="#2c3e50",
-    value_size=32,
-    show_trend=True,
-    positive_color="#27ae60",
-    negative_color="#e74c3c",
-    primary_color="#2c3e50",
-    styling=Styling(size=Size(width="100%", margin="8px 0", min_height="140px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default")),
-    display_order=0,
-    css_classes=["metric-card-component"],
-    custom_attributes={"metric-title": "Active resolutions", "value-color": "#2c3e50", "value-size": "32", "show-trend": "true", "positive-color": "#27ae60", "negative-color": "#e74c3c", "format": "number", "data-source": "class_gguigpgu0_mwta93ho_wma", "aggregation": "count", "filter": "status == ACTIVE"}
-)
-metric_card_2_binding = None
-try:
-    metric_card_2_binding = build_data_binding(domain_model, "Resolution", name="Active_resolutions_binding", filter_expression="status == ACTIVE", aggregation="count")
-except NameError:
-    pass
-metric_card_2.data_binding = metric_card_2_binding
-div_4 = ViewContainer(
-    name="div_4",
-    description="div container",
-    view_elements={metric_card_2},
-    component_id="container_div_4",
-    tag_name="div",
-    display_order=1,
-    css_classes=["app-panel"]
-)
-section_3 = ViewContainer(
-    name="section_3",
-    description="section container",
-    view_elements={h2_3, div_4},
-    component_id="container_section_3",
-    tag_name="section",
-    display_order=3,
-    css_classes=["app-wrap"]
-)
-h2_4 = Text(
-    name="h2_4",
-    content="Habit momentum",
-    description="Text element",
-    tag_name="h2",
-    display_order=0,
-    css_classes=["app-section-title"]
-)
-metric_card_3 = MetricCard(
-    name="metric_card_3",
-    metric_title="Average habit streak",
-    format="number",
-    value_color="#2c3e50",
-    value_size=32,
-    show_trend=True,
-    positive_color="#27ae60",
-    negative_color="#e74c3c",
-    primary_color="#2c3e50",
-    styling=Styling(size=Size(width="100%", margin="8px 0", min_height="140px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default")),
-    display_order=0,
-    css_classes=["metric-card-component"],
-    custom_attributes={"metric-title": "Average habit streak", "value-color": "#2c3e50", "value-size": "32", "show-trend": "true", "positive-color": "#27ae60", "negative-color": "#e74c3c", "format": "number", "data-source": "class_k6uzcgxhn_mwta93ho_7t5", "data-field": "attr_9rxhfuz9j_mwta93ho_6x4", "aggregation": "avg"}
-)
-metric_card_3_binding = None
-try:
-    metric_card_3_binding = build_data_binding(domain_model, "Habit", data_field="currentStreak", name="Average_habit_streak_binding", aggregation="average")
-except NameError:
-    pass
-metric_card_3.data_binding = metric_card_3_binding
-div_5 = ViewContainer(
-    name="div_5",
-    description="div container",
-    view_elements={metric_card_3},
-    component_id="container_div_5",
-    tag_name="div",
-    display_order=1,
-    css_classes=["app-panel"]
-)
-section_4 = ViewContainer(
-    name="section_4",
-    description="section container",
-    view_elements={h2_4, div_5},
-    component_id="container_section_4",
-    tag_name="section",
-    display_order=4,
-    css_classes=["app-wrap"]
-)
-p_5 = Text(
-    name="p_5",
-    content="See how your goals are distributed across each stage.",
-    description="Text element",
-    tag_name="p",
-    display_order=0,
-    css_classes=["app-section-sub"]
-)
-resolutions_by_status_series_0_binding = None
-try:
-    resolutions_by_status_series_0_binding = build_data_binding(domain_model, "Resolution", label_field="status", name="ResolutionDataBinding", aggregation="count")
-except NameError:
-    pass
-resolutions_by_status_series_0_styling_size = Size()
-resolutions_by_status_series_0_styling_pos = Position()
-resolutions_by_status_series_0_styling_color = Color(background_color="#00C49F", color_palette="default", primary_color="#00C49F")
-resolutions_by_status_series_0_styling = Styling(size=resolutions_by_status_series_0_styling_size, position=resolutions_by_status_series_0_styling_pos, color=resolutions_by_status_series_0_styling_color)
-resolutions_by_status_series_0 = Series(name="Resolution", label="Resolution", data_binding=resolutions_by_status_series_0_binding, styling=resolutions_by_status_series_0_styling)
-resolutions_by_status = PieChart(
-    name="Resolutions_by_status",
-    series=[resolutions_by_status_series_0],
-    title="Resolutions by status",
-    show_legend=True,
-    legend_position=Alignment.BOTTOM,
-    show_labels=True,
-    label_position=Alignment.INSIDE,
-    padding_angle=0,
-    inner_radius=0,
-    outer_radius=80,
-    start_angle=0,
-    end_angle=360,
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    display_order=0,
-    css_classes=["pie-chart-component"],
-    custom_attributes={"chart-title": "Resolutions by status", "show-grid": "true", "show-legend": "true", "aggregation": "count", "data-source": "class_gguigpgu0_mwta93ho_wma", "label-field": "attr_110qn1pl9_mwta93ho_yx3", "series": "[{\"name\": \"Resolution\", \"data-source\": \"class_gguigpgu0_mwta93ho_wma\", \"color\": \"#00C49F\", \"data\": [{\"name\": \"ACTIVE\", \"value\": 5, \"color\": \"#5546d9\"}, {\"name\": \"PLANNED\", \"value\": 3, \"color\": \"#e8b85b\"}, {\"name\": \"PAUSED\", \"value\": 2, \"color\": \"#8c87a7\"}, {\"name\": \"COMPLETED\", \"value\": 7, \"color\": \"#2a9d79\"}, {\"name\": \"ABANDONED\", \"value\": 1, \"color\": \"#c57980\"}], \"label-field\": \"attr_110qn1pl9_mwta93ho_yx3\"}]", "legend-position": "bottom", "show-labels": "true", "label-position": "inside", "padding-angle": "0"}
-)
-resolutions_by_status_binding = None
-try:
-    resolutions_by_status_binding = build_data_binding(domain_model, "Resolution", label_field="status", name="ResolutionDataBinding", aggregation="count")
-except NameError:
-    pass
-resolutions_by_status.data_binding = resolutions_by_status_binding
-div_6 = ViewContainer(
-    name="div_6",
-    description="div container",
-    view_elements={resolutions_by_status},
-    component_id="container_div_6",
-    tag_name="div",
-    display_order=1,
-    css_classes=["app-panel"]
-)
-section_5 = ViewContainer(
-    name="section_5",
-    description="section container",
-    view_elements={p_5, div_6},
-    component_id="container_section_5",
-    tag_name="section",
-    display_order=5,
-    css_classes=["app-wrap"]
-)
-h2_5 = Text(
-    name="h2_5",
-    content="Progress journal",
-    description="Text element",
-    tag_name="h2",
-    display_order=0,
-    css_classes=["app-section-title"]
-)
-p_6 = Text(
-    name="p_6",
-    content="Your recorded actions, notes, and amounts in one place.",
-    description="Text element",
-    tag_name="p",
-    display_order=1,
-    css_classes=["app-section-sub"]
-)
-table_progressentry_dashboard_col_0 = FieldColumn(label="Date", field=ProgressEntry_date)
-table_progressentry_dashboard_col_1 = FieldColumn(label="Notes", field=ProgressEntry_notes)
-table_progressentry_dashboard_col_2 = FieldColumn(label="Amount", field=ProgressEntry_amount)
-table_progressentry_dashboard_col_3_path = bind_association_end(domain_model, "resolution")
-table_progressentry_dashboard_col_3 = LookupColumn(label="Resolution", path=table_progressentry_dashboard_col_3_path, field=Resolution_title)
-table_progressentry_dashboard_col_4_path = bind_association_end(domain_model, "habit")
-table_progressentry_dashboard_col_4 = LookupColumn(label="Habit", path=table_progressentry_dashboard_col_4_path, field=Habit_name)
-table_progressentry_dashboard = Table(
-    name="table_progressentry_dashboard",
-    title="Progress journal entries",
     show_header=True,
     striped_rows=False,
     show_pagination=True,
     rows_per_page=5,
     action_buttons=True,
-    columns=[table_progressentry_dashboard_col_0, table_progressentry_dashboard_col_1, table_progressentry_dashboard_col_2, table_progressentry_dashboard_col_3, table_progressentry_dashboard_col_4],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    component_id="table-progressentry-dashboard",
+    columns=[table_category_categories_profile_col_0, table_category_categories_profile_col_1, table_category_categories_profile_col_2],
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
+    component_id="table-category-categories-profile",
     display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Progress journal entries", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_kv587q4au_mwta93ho_rhu", "columns": "[{\"field\": \"date\", \"label\": \"Date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"notes\", \"label\": \"Notes\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"amount\", \"label\": \"Amount\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Resolution\", \"label\": \"Resolution\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_gguigpgu0_mwta93ho_wma\", \"lookupField\": \"title\", \"_expanded\": false}, {\"field\": \"Habit\", \"label\": \"Habit\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_k6uzcgxhn_mwta93ho_7t5\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-progressentry-dashboard"}
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Goal categories and colors", "data-source": "class_9iv0v3742_mwta93ho_5ev", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"name\", \"label\": \"Name\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"colorHex\", \"label\": \"Color hex\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-category-categories-profile"}
 )
-table_progressentry_dashboard_binding = None
+table_category_categories_profile_binding = None
 try:
-    table_progressentry_dashboard_binding = build_data_binding(domain_model, "ProgressEntry", name="ProgressEntryDataBinding")
+    table_category_categories_profile_binding = build_data_binding(domain_model, "Category", name="CategoryDataBinding")
 except NameError:
     pass
-table_progressentry_dashboard.data_binding = table_progressentry_dashboard_binding
-action_button = Button(
-    name="action_button",
-    description="Button component",
-    label="edit",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=ProgressEntry_m_edit,
-    instance_source="table-progressentry-dashboard",
-    is_instance_method=True,
-    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    tag_name="button",
-    display_order=0,
-    css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "edit", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_j4wm0kfj3_mwta93ho_k3z", "data-instance-source": "table-progressentry-dashboard", "instance-method": "false"}
-)
-action_button_2 = Button(
-    name="action_button_2",
-    description="Button component",
-    label="remove",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=ProgressEntry_m_remove,
-    instance_source="table-progressentry-dashboard",
-    is_instance_method=True,
-    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    tag_name="button",
-    display_order=1,
-    css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "remove", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_nx15n7oq1_mwta93ho_hbv", "data-instance-source": "table-progressentry-dashboard", "instance-method": "false"}
-)
-div_8 = ViewContainer(
-    name="div_8",
-    description="div container",
-    view_elements={action_button, action_button_2},
-    styling=Styling(size=Size(margin="16px 0"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")),
-    component_id="container_div_8",
-    tag_name="div",
-    display_order=1,
-    css_classes=["assistant-method-buttons"]
-)
-div_8_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")
-div_8.layout = div_8_layout
-div_7 = ViewContainer(
-    name="div_7",
-    description="div container",
-    view_elements={table_progressentry_dashboard, div_8},
-    component_id="container_div_7",
-    tag_name="div",
+table_category_categories_profile.data_binding = table_category_categories_profile_binding
+component_36 = ViewContainer(
+    name="Component_36",
+    description=" component",
+    view_elements={table_category_categories_profile},
     display_order=2,
     css_classes=["app-panel", "app-table"]
 )
-a_3 = Text(
-    name="a_3",
-    content="Explore a resolution",
-    description="Text element",
-    tag_name="a",
+action_button_15 = Button(
+    name="action_button_15",
+    description="Button component",
+    label="Add CategoryAdd Category",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.Create,
+    entity_class=Category,
+    instance_source="table-category-categories-profile",
+    tag_name="button",
     display_order=0,
-    custom_attributes={"href": "/resolution-detail"}
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Add Category", "data-action-type": "create", "data-entity-class": "class_9iv0v3742_mwta93ho_5ev", "data-instance-source": "table-category-categories-profile"}
 )
-div_9 = ViewContainer(
-    name="div_9",
-    description="div container",
-    view_elements={a_3},
-    component_id="container_div_9",
-    tag_name="div",
+action_button_16 = Button(
+    name="action_button_16",
+    description="Button component",
+    label="Edit CategoryEdit Category",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.Update,
+    entity_class=Category,
+    instance_source="table-category-categories-profile",
+    tag_name="button",
+    display_order=1,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Edit Category", "data-action-type": "update", "data-entity-class": "class_9iv0v3742_mwta93ho_5ev", "data-instance-source": "table-category-categories-profile"}
+)
+action_button_17 = Button(
+    name="action_button_17",
+    description="Button component",
+    label="Delete CategoryDelete Category",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.Delete,
+    entity_class=Category,
+    instance_source="table-category-categories-profile",
+    confirmation_required=True,
+    confirmation_message="Delete the selected category?",
+    tag_name="button",
+    display_order=2,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Delete Category", "data-action-type": "delete", "data-entity-class": "class_9iv0v3742_mwta93ho_5ev", "data-instance-source": "table-category-categories-profile"}
+)
+component_37 = ViewContainer(
+    name="Component_37",
+    description=" component",
+    view_elements={action_button_15, action_button_16, action_button_17},
     display_order=3,
     css_classes=["app-actions"]
 )
-section_6 = ViewContainer(
-    name="section_6",
+section_16 = ViewContainer(
+    name="section_16",
     description="section container",
-    view_elements={h2_5, p_6, div_7, div_9},
-    component_id="container_section_6",
+    view_elements={h2_15, p_23, component_36, component_37},
+    component_id="container_section_16",
     tag_name="section",
-    display_order=6,
+    display_order=1,
     css_classes=["app-wrap"]
 )
-main = ViewContainer(
-    name="main",
+h2_16 = Text(
+    name="h2_16",
+    content="Profile",
+    description="Text element",
+    tag_name="h2",
+    display_order=0,
+    css_classes=["app-section-title"]
+)
+p_24 = Text(
+    name="p_24",
+    content="Your account information and access history.",
+    description="Text element",
+    tag_name="p",
+    display_order=1,
+    css_classes=["app-section-sub"]
+)
+table_user_categories_profile_col_0 = FieldColumn(label="Full name", field=User_fullName)
+table_user_categories_profile_col_1 = FieldColumn(label="Email", field=User_email)
+table_user_categories_profile_col_2 = FieldColumn(label="Created at", field=User_createdAt)
+table_user_categories_profile_col_3 = FieldColumn(label="Last login at", field=User_lastLoginAt)
+table_user_categories_profile = Table(
+    name="table_user_categories_profile",
+    title="Your profile details",
+    primary_color="#2c3e50",
+    show_header=True,
+    striped_rows=False,
+    show_pagination=True,
+    rows_per_page=5,
+    action_buttons=True,
+    columns=[table_user_categories_profile_col_0, table_user_categories_profile_col_1, table_user_categories_profile_col_2, table_user_categories_profile_col_3],
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
+    component_id="table-user-categories-profile",
+    display_order=0,
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Your profile details", "data-source": "class_748xw64mr_mwta93ho_xxu", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"fullName\", \"label\": \"Full name\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"email\", \"label\": \"Email\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"lastLoginAt\", \"label\": \"Last login at\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-user-categories-profile"}
+)
+table_user_categories_profile_binding = None
+try:
+    table_user_categories_profile_binding = build_data_binding(domain_model, "User", name="UserDataBinding")
+except NameError:
+    pass
+table_user_categories_profile.data_binding = table_user_categories_profile_binding
+iu3pma = Button(
+    name="iu3pma",
+    description="Button component",
+    label="createResolutioncreateResolution",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=User_m_createResolution,
+    instance_source="table-user-categories-profile",
+    is_instance_method=True,
+    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
+    component_id="iu3pma",
+    tag_name="button",
+    display_order=0,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "createResolution", "data-action-type": "run-method", "data-method-class": "class_748xw64mr_mwta93ho_xxu", "data-method": "method_tsjyzvhgf_mwta93ho_hzc", "data-instance-source": "table-user-categories-profile", "instance-method": "false", "id": "iu3pma"}
+)
+ivcc6s = Button(
+    name="ivcc6s",
+    description="Button component",
+    label="addProgressEntryaddProgressEntry",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=User_m_addProgressEntry,
+    instance_source="table-user-categories-profile",
+    is_instance_method=True,
+    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
+    component_id="ivcc6s",
+    tag_name="button",
+    display_order=1,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "addProgressEntry", "data-action-type": "run-method", "data-method-class": "class_748xw64mr_mwta93ho_xxu", "data-method": "method_lmxg0zdi0_mwta93ho_6gy", "data-instance-source": "table-user-categories-profile", "instance-method": "false", "id": "ivcc6s"}
+)
+ixvkz3 = ViewContainer(
+    name="ixvkz3",
+    description=" component",
+    view_elements={iu3pma, ivcc6s},
+    styling=Styling(size=Size(margin="16px 0"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")),
+    component_id="ixvkz3",
+    display_order=1,
+    css_classes=["assistant-method-buttons"],
+    custom_attributes={"id": "ixvkz3"}
+)
+ixvkz3_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")
+ixvkz3.layout = ixvkz3_layout
+component_38 = ViewContainer(
+    name="Component_38",
+    description=" component",
+    view_elements={table_user_categories_profile, ixvkz3},
+    display_order=2,
+    css_classes=["app-panel", "app-table"]
+)
+section_17 = ViewContainer(
+    name="section_17",
+    description="section container",
+    view_elements={h2_16, p_24, component_38},
+    component_id="container_section_17",
+    tag_name="section",
+    display_order=2,
+    css_classes=["app-wrap"]
+)
+iuwb1w = ViewContainer(
+    name="iuwb1w",
     description="main container",
-    view_elements={header, section, section_2, section_3, section_4, section_5, section_6},
+    view_elements={header_5, section_16, section_17},
     styling=Styling(size=Size(padding="24px 16px", margin="0 auto", max_width="1200px"), color=Color(color_palette="default")),
-    component_id="container_main",
+    component_id="iuwb1w",
     tag_name="main",
     display_order=1,
-    css_classes=["assistant-main"]
+    css_classes=["assistant-main"],
+    custom_attributes={"id": "iuwb1w"}
 )
-wrapper.view_elements = {nav, main}
+i4bmm1.view_elements = {icyl7o, iuwb1w}
 
 
-# Screen: wrapper_2
-wrapper_2 = Screen(name="wrapper_2", description="Resolutions", view_elements=set(), route_path="/resolutions", screen_size="Medium")
-wrapper_2_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
-wrapper_2_styling_pos = Position()
-wrapper_2_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
-wrapper_2_styling = Styling(size=wrapper_2_styling_size, position=wrapper_2_styling_pos, color=wrapper_2_styling_color)
-wrapper_2.styling = wrapper_2_styling
-wrapper_2.component_id = "page-resolutions"
-text_2 = Text(
-    name="text_2",
+# Screen: icw9m8
+icw9m8 = Screen(name="icw9m8", description="Resolution Detail", view_elements=set(), route_path="/resolution-detail", screen_size="Medium")
+icw9m8_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
+icw9m8_styling_pos = Position()
+icw9m8_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
+icw9m8_styling = Styling(size=icw9m8_styling_size, position=icw9m8_styling_pos, color=icw9m8_styling_color)
+icw9m8.styling = icw9m8_styling
+icw9m8.component_id = "page-resolution-detail"
+iakp0c = Text(
+    name="iakp0c",
     content="Stride",
     description="Text element",
     styling=Styling(size=Size(font_size="1.25rem", font_weight="700", letter_spacing="-0.01em"), color=Color(text_color="#23213a", color_palette="default")),
-    display_order=0
+    component_id="iakp0c",
+    display_order=0,
+    custom_attributes={"id": "iakp0c"}
 )
-link_6 = Link(
-    name="link_6",
+ivh6af = Link(
+    name="ivh6af",
     description="Link element",
     label="Dashboard",
     url="/dashboard",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="ivh6af",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard"}
+    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard", "id": "ivh6af"}
 )
-link_7 = Link(
-    name="link_7",
+iy0dwt = Link(
+    name="iy0dwt",
     description="Link element",
     label="Resolutions",
     url="/resolutions",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="iy0dwt",
     tag_name="a",
     display_order=1,
-    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions"}
+    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions", "id": "iy0dwt"}
 )
-link_8 = Link(
-    name="link_8",
+ii0ae1 = Link(
+    name="ii0ae1",
     description="Link element",
     label="Resolution Detail",
     url="/resolution-detail",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    component_id="ii0ae1",
     tag_name="a",
     display_order=2,
-    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail"}
+    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail", "id": "ii0ae1"}
 )
-link_9 = Link(
-    name="link_9",
+iksifc = Link(
+    name="iksifc",
     description="Link element",
     label="Habits",
     url="/habits",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="iksifc",
     tag_name="a",
     display_order=3,
-    custom_attributes={"href": "/habits", "data-navigate-to": "habits"}
+    custom_attributes={"href": "/habits", "data-navigate-to": "habits", "id": "iksifc"}
 )
-link_10 = Link(
-    name="link_10",
+ivi1c5 = Link(
+    name="ivi1c5",
     description="Link element",
     label="Categories & Profile",
     url="/categories-profile",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="ivi1c5",
     tag_name="a",
     display_order=4,
-    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile"}
+    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile", "id": "ivi1c5"}
 )
-component_2 = ViewContainer(
-    name="Component_2",
+igz7iz = ViewContainer(
+    name="igz7iz",
     description=" component",
-    view_elements={link_6, link_7, link_8, link_9, link_10},
+    view_elements={ivh6af, iy0dwt, ii0ae1, iksifc, ivi1c5},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")),
-    display_order=1
+    component_id="igz7iz",
+    display_order=1,
+    custom_attributes={"id": "igz7iz"}
 )
-component_2_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
-component_2.layout = component_2_layout
-nav_2 = ViewContainer(
-    name="nav_2",
+igz7iz_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
+igz7iz.layout = igz7iz_layout
+ieptgy = ViewContainer(
+    name="ieptgy",
     description="nav container",
-    view_elements={text_2, component_2},
+    view_elements={iakp0c, igz7iz},
     styling=Styling(size=Size(height="64px", padding="0 32px", font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif"), position=Position(p_type=PositionType.STICKY, top="0", z_index=50, display="flex"), color=Color(background_color="#ffffff", color_palette="default", border_bottom="1px solid #e8e5f0", box_shadow="0 1px 3px rgba(0,0,0,0.06)"), layout=Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")),
-    component_id="container_nav_2",
+    component_id="ieptgy",
     tag_name="nav",
     display_order=0,
-    css_classes=["assistant-nav-header"]
+    css_classes=["assistant-nav-header"],
+    custom_attributes={"id": "ieptgy"}
 )
-nav_2_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
-nav_2.layout = nav_2_layout
+ieptgy_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
+ieptgy.layout = ieptgy_layout
+p_11 = Text(
+    name="p_11",
+    content="GOAL WORKSPACE",
+    description="Text element",
+    tag_name="p",
+    display_order=0,
+    css_classes=["app-eyebrow"]
+)
+h1_3 = Text(
+    name="h1_3",
+    content="Keep the goal moving.",
+    description="Text element",
+    tag_name="h1",
+    display_order=1
+)
+p_12 = Text(
+    name="p_12",
+    content="Manage milestones and record the actions behind your progress.",
+    description="Text element",
+    tag_name="p",
+    display_order=2
+)
+component_17 = ViewContainer(
+    name="Component_17",
+    description=" component",
+    view_elements={p_11, h1_3, p_12},
+    display_order=0
+)
+a_6 = Text(
+    name="a_6",
+    content="← All resolutions",
+    description="Text element",
+    tag_name="a",
+    display_order=1,
+    css_classes=["app-link"],
+    custom_attributes={"href": "/resolutions"}
+)
+header_3 = ViewContainer(
+    name="header_3",
+    description="header container",
+    view_elements={component_17, a_6},
+    component_id="container_header_3",
+    tag_name="header",
+    display_order=0,
+    css_classes=["app-head"]
+)
+h2_8 = Text(
+    name="h2_8",
+    content="Break it down. Build it up.",
+    description="Text element",
+    tag_name="h2",
+    display_order=0
+)
+p_13 = Text(
+    name="p_13",
+    content="Small milestones give your bigger goal a path forward.",
+    description="Text element",
+    tag_name="p",
+    display_order=1
+)
+component_18 = ViewContainer(
+    name="Component_18",
+    description=" component",
+    view_elements={h2_8, p_13},
+    display_order=0
+)
+a_7 = Text(
+    name="a_7",
+    content="Explore habits →",
+    description="Text element",
+    tag_name="a",
+    display_order=1,
+    custom_attributes={"href": "/habits"}
+)
+section_9 = ViewContainer(
+    name="section_9",
+    description="section container",
+    view_elements={component_18, a_7},
+    component_id="container_section_9",
+    tag_name="section",
+    display_order=1,
+    css_classes=["app-band"]
+)
+h2_9 = Text(
+    name="h2_9",
+    content="Goal details",
+    description="Text element",
+    tag_name="h2",
+    display_order=0,
+    css_classes=["app-section-title"]
+)
+table_resolution_resolution_detail_col_0 = FieldColumn(label="Title", field=Resolution_title)
+table_resolution_resolution_detail_col_1 = FieldColumn(label="Description", field=Resolution_description)
+table_resolution_resolution_detail_col_2 = FieldColumn(label="Created at", field=Resolution_createdAt)
+table_resolution_resolution_detail_col_3 = FieldColumn(label="Updated at", field=Resolution_updatedAt)
+table_resolution_resolution_detail_col_4 = FieldColumn(label="Target date", field=Resolution_targetDate)
+table_resolution_resolution_detail_col_5 = FieldColumn(label="Status", field=Resolution_status)
+table_resolution_resolution_detail_col_6_path = bind_association_end(domain_model, "category")
+table_resolution_resolution_detail_col_6 = LookupColumn(label="Category", path=table_resolution_resolution_detail_col_6_path, field=Category_name)
+table_resolution_resolution_detail = Table(
+    name="table_resolution_resolution_detail",
+    title="Goal details and status",
+    primary_color="#2c3e50",
+    show_header=True,
+    striped_rows=False,
+    show_pagination=True,
+    rows_per_page=5,
+    action_buttons=True,
+    columns=[table_resolution_resolution_detail_col_0, table_resolution_resolution_detail_col_1, table_resolution_resolution_detail_col_2, table_resolution_resolution_detail_col_3, table_resolution_resolution_detail_col_4, table_resolution_resolution_detail_col_5, table_resolution_resolution_detail_col_6],
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
+    component_id="table-resolution-resolution-detail",
+    display_order=0,
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Goal details and status", "data-source": "class_gguigpgu0_mwta93ho_wma", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"title\", \"label\": \"Title\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"updatedAt\", \"label\": \"Updated at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"targetDate\", \"label\": \"Target date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"status\", \"label\": \"Status\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Category\", \"label\": \"Category\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_9iv0v3742_mwta93ho_5ev\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-resolution-resolution-detail"}
+)
+table_resolution_resolution_detail_binding = None
+try:
+    table_resolution_resolution_detail_binding = build_data_binding(domain_model, "Resolution", name="ResolutionDataBinding")
+except NameError:
+    pass
+table_resolution_resolution_detail.data_binding = table_resolution_resolution_detail_binding
+component_19 = ViewContainer(
+    name="Component_19",
+    description=" component",
+    view_elements={table_resolution_resolution_detail},
+    display_order=1,
+    css_classes=["app-panel", "app-table"]
+)
+action_button_4 = Button(
+    name="action_button_4",
+    description="Button component",
+    label="Activate selectedActivate selected",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=Resolution_m_activate,
+    instance_source="table-resolution-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=0,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Activate selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_c7r3mhje4_mwta93ho_i4a", "data-instance-source": "table-resolution-resolution-detail", "instance-method": "false"}
+)
+action_button_5 = Button(
+    name="action_button_5",
+    description="Button component",
+    label="Pause selectedPause selected",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=Resolution_m_pause,
+    instance_source="table-resolution-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=1,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Pause selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_0ymg4iyyr_mwta93ho_6zl", "data-instance-source": "table-resolution-resolution-detail", "instance-method": "false"}
+)
+action_button_6 = Button(
+    name="action_button_6",
+    description="Button component",
+    label="Complete selectedComplete selected",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=Resolution_m_complete,
+    instance_source="table-resolution-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=2,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Complete selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_xmxb055gg_mwta93ho_nzw", "data-instance-source": "table-resolution-resolution-detail", "instance-method": "false"}
+)
+action_button_7 = Button(
+    name="action_button_7",
+    description="Button component",
+    label="Edit ResolutionEdit Resolution",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=ProgressEntry_m_edit,
+    instance_source="table-progressentry-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=3,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Edit Resolution", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_j4wm0kfj3_mwta93ho_k3z", "data-instance-source": "table-progressentry-resolution-detail", "instance-method": "false"}
+)
+component_20 = ViewContainer(
+    name="Component_20",
+    description=" component",
+    view_elements={action_button_4, action_button_5, action_button_6, action_button_7},
+    display_order=2,
+    css_classes=["app-actions"]
+)
+section_10 = ViewContainer(
+    name="section_10",
+    description="section container",
+    view_elements={h2_9, component_19, component_20},
+    component_id="container_section_10",
+    tag_name="section",
+    display_order=2,
+    css_classes=["app-wrap"]
+)
+h2_10 = Text(
+    name="h2_10",
+    content="Milestones",
+    description="Text element",
+    tag_name="h2",
+    display_order=0,
+    css_classes=["app-section-title"]
+)
+p_14 = Text(
+    name="p_14",
+    content="Select a milestone to mark it complete.",
+    description="Text element",
+    tag_name="p",
+    display_order=1,
+    css_classes=["app-section-sub"]
+)
+table_subgoal_resolution_detail_col_0 = FieldColumn(label="Title", field=SubGoal_title)
+table_subgoal_resolution_detail_col_1 = FieldColumn(label="Description", field=SubGoal_description)
+table_subgoal_resolution_detail_col_2 = FieldColumn(label="Created at", field=SubGoal_createdAt)
+table_subgoal_resolution_detail_col_3 = FieldColumn(label="Target date", field=SubGoal_targetDate)
+table_subgoal_resolution_detail_col_4 = FieldColumn(label="Completed", field=SubGoal_completed)
+table_subgoal_resolution_detail = Table(
+    name="table_subgoal_resolution_detail",
+    title="Goal milestones",
+    primary_color="#2c3e50",
+    show_header=True,
+    striped_rows=False,
+    show_pagination=True,
+    rows_per_page=5,
+    action_buttons=True,
+    columns=[table_subgoal_resolution_detail_col_0, table_subgoal_resolution_detail_col_1, table_subgoal_resolution_detail_col_2, table_subgoal_resolution_detail_col_3, table_subgoal_resolution_detail_col_4],
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
+    component_id="table-subgoal-resolution-detail",
+    display_order=0,
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Goal milestones", "data-source": "class_aokyvix9v_mwta93ho_82n", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"title\", \"label\": \"Title\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"targetDate\", \"label\": \"Target date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"completed\", \"label\": \"Completed\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-subgoal-resolution-detail"}
+)
+table_subgoal_resolution_detail_binding = None
+try:
+    table_subgoal_resolution_detail_binding = build_data_binding(domain_model, "SubGoal", name="SubGoalDataBinding")
+except NameError:
+    pass
+table_subgoal_resolution_detail.data_binding = table_subgoal_resolution_detail_binding
+component_21 = ViewContainer(
+    name="Component_21",
+    description=" component",
+    view_elements={table_subgoal_resolution_detail},
+    display_order=2,
+    css_classes=["app-panel", "app-table"]
+)
+action_button_8 = Button(
+    name="action_button_8",
+    description="Button component",
+    label="Complete selected milestoneComplete selected milestone",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=SubGoal_m_markComplete,
+    instance_source="table-subgoal-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=0,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Complete selected milestone", "data-action-type": "run-method", "data-method-class": "class_aokyvix9v_mwta93ho_82n", "data-method": "method_f7pkjcbpk_mwta93ho_prj", "data-instance-source": "table-subgoal-resolution-detail", "instance-method": "false"}
+)
+action_button_9 = Button(
+    name="action_button_9",
+    description="Button component",
+    label="Add SubGoalAdd SubGoal",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.Create,
+    entity_class=SubGoal,
+    instance_source="table-subgoal-resolution-detail",
+    tag_name="button",
+    display_order=1,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Add SubGoal", "data-action-type": "create", "data-entity-class": "class_aokyvix9v_mwta93ho_82n", "data-instance-source": "table-subgoal-resolution-detail"}
+)
+component_22 = ViewContainer(
+    name="Component_22",
+    description=" component",
+    view_elements={action_button_8, action_button_9},
+    display_order=3,
+    css_classes=["app-actions"]
+)
+section_11 = ViewContainer(
+    name="section_11",
+    description="section container",
+    view_elements={h2_10, p_14, component_21, component_22},
+    component_id="container_section_11",
+    tag_name="section",
+    display_order=3,
+    css_classes=["app-wrap"]
+)
+h2_11 = Text(
+    name="h2_11",
+    content="Progress entries",
+    description="Text element",
+    tag_name="h2",
+    display_order=0,
+    css_classes=["app-section-title"]
+)
+p_15 = Text(
+    name="p_15",
+    content="Select an entry to edit or remove it.",
+    description="Text element",
+    tag_name="p",
+    display_order=1,
+    css_classes=["app-section-sub"]
+)
+table_progressentry_resolution_detail_col_0 = FieldColumn(label="Date", field=ProgressEntry_date)
+table_progressentry_resolution_detail_col_1 = FieldColumn(label="Notes", field=ProgressEntry_notes)
+table_progressentry_resolution_detail_col_2 = FieldColumn(label="Amount", field=ProgressEntry_amount)
+table_progressentry_resolution_detail_col_3_path = bind_association_end(domain_model, "resolution")
+table_progressentry_resolution_detail_col_3 = LookupColumn(label="Resolution", path=table_progressentry_resolution_detail_col_3_path, field=Resolution_title)
+table_progressentry_resolution_detail_col_4_path = bind_association_end(domain_model, "habit")
+table_progressentry_resolution_detail_col_4 = LookupColumn(label="Habit", path=table_progressentry_resolution_detail_col_4_path, field=Habit_name)
+table_progressentry_resolution_detail = Table(
+    name="table_progressentry_resolution_detail",
+    title="Recorded progress",
+    primary_color="#2c3e50",
+    show_header=True,
+    striped_rows=False,
+    show_pagination=True,
+    rows_per_page=5,
+    action_buttons=True,
+    columns=[table_progressentry_resolution_detail_col_0, table_progressentry_resolution_detail_col_1, table_progressentry_resolution_detail_col_2, table_progressentry_resolution_detail_col_3, table_progressentry_resolution_detail_col_4],
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
+    component_id="table-progressentry-resolution-detail",
+    display_order=0,
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Recorded progress", "data-source": "class_kv587q4au_mwta93ho_rhu", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"date\", \"label\": \"Date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"notes\", \"label\": \"Notes\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"amount\", \"label\": \"Amount\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Resolution\", \"label\": \"Resolution\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_gguigpgu0_mwta93ho_wma\", \"lookupField\": \"title\", \"_expanded\": false}, {\"field\": \"Habit\", \"label\": \"Habit\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_k6uzcgxhn_mwta93ho_7t5\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-progressentry-resolution-detail"}
+)
+table_progressentry_resolution_detail_binding = None
+try:
+    table_progressentry_resolution_detail_binding = build_data_binding(domain_model, "ProgressEntry", name="ProgressEntryDataBinding")
+except NameError:
+    pass
+table_progressentry_resolution_detail.data_binding = table_progressentry_resolution_detail_binding
+component_23 = ViewContainer(
+    name="Component_23",
+    description=" component",
+    view_elements={table_progressentry_resolution_detail},
+    display_order=2,
+    css_classes=["app-panel", "app-table"]
+)
+action_button_10 = Button(
+    name="action_button_10",
+    description="Button component",
+    label="Edit selected entryEdit selected entry",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=ProgressEntry_m_edit,
+    instance_source="table-progressentry-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=0,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Edit selected entry", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_j4wm0kfj3_mwta93ho_k3z", "data-instance-source": "table-progressentry-resolution-detail", "instance-method": "false"}
+)
+action_button_11 = Button(
+    name="action_button_11",
+    description="Button component",
+    label="Remove selected entryRemove selected entry",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=ProgressEntry_m_remove,
+    instance_source="table-progressentry-resolution-detail",
+    is_instance_method=True,
+    tag_name="button",
+    display_order=1,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Remove selected entry", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_nx15n7oq1_mwta93ho_hbv", "data-instance-source": "table-progressentry-resolution-detail", "instance-method": "false"}
+)
+action_button_12 = Button(
+    name="action_button_12",
+    description="Button component",
+    label="Add ProgressEntryAdd ProgressEntry",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.Create,
+    entity_class=ProgressEntry,
+    instance_source="table-progressentry-resolution-detail",
+    tag_name="button",
+    display_order=2,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "Add ProgressEntry", "data-action-type": "create", "data-entity-class": "class_kv587q4au_mwta93ho_rhu", "data-instance-source": "table-progressentry-resolution-detail"}
+)
+component_24 = ViewContainer(
+    name="Component_24",
+    description=" component",
+    view_elements={action_button_10, action_button_11, action_button_12},
+    display_order=3,
+    css_classes=["app-actions"]
+)
+section_12 = ViewContainer(
+    name="section_12",
+    description="section container",
+    view_elements={h2_11, p_15, component_23, component_24},
+    component_id="container_section_12",
+    tag_name="section",
+    display_order=4,
+    css_classes=["app-wrap"]
+)
+iyrx2m = ViewContainer(
+    name="iyrx2m",
+    description="main container",
+    view_elements={header_3, section_9, section_10, section_11, section_12},
+    styling=Styling(size=Size(padding="24px 16px", margin="0 auto", max_width="1200px"), color=Color(color_palette="default")),
+    component_id="iyrx2m",
+    tag_name="main",
+    display_order=1,
+    css_classes=["assistant-main"],
+    custom_attributes={"id": "iyrx2m"}
+)
+icw9m8.view_elements = {ieptgy, iyrx2m}
+
+
+# Screen: in9bt
+in9bt = Screen(name="in9bt", description="Resolutions", view_elements=set(), route_path="/resolutions", screen_size="Medium")
+in9bt_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
+in9bt_styling_pos = Position()
+in9bt_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
+in9bt_styling = Styling(size=in9bt_styling_size, position=in9bt_styling_pos, color=in9bt_styling_color)
+in9bt.styling = in9bt_styling
+in9bt.component_id = "page-resolutions"
+i6gek = Text(
+    name="i6gek",
+    content="Stride",
+    description="Text element",
+    styling=Styling(size=Size(font_size="1.25rem", font_weight="700", letter_spacing="-0.01em"), color=Color(text_color="#23213a", color_palette="default")),
+    component_id="i6gek",
+    display_order=0,
+    custom_attributes={"id": "i6gek"}
+)
+itnti = Link(
+    name="itnti",
+    description="Link element",
+    label="Dashboard",
+    url="/dashboard",
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="itnti",
+    tag_name="a",
+    display_order=0,
+    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard", "id": "itnti"}
+)
+i4iok = Link(
+    name="i4iok",
+    description="Link element",
+    label="Resolutions",
+    url="/resolutions",
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    component_id="i4iok",
+    tag_name="a",
+    display_order=1,
+    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions", "id": "i4iok"}
+)
+i4ltd = Link(
+    name="i4ltd",
+    description="Link element",
+    label="Resolution Detail",
+    url="/resolution-detail",
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i4ltd",
+    tag_name="a",
+    display_order=2,
+    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail", "id": "i4ltd"}
+)
+ic2si = Link(
+    name="ic2si",
+    description="Link element",
+    label="Habits",
+    url="/habits",
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="ic2si",
+    tag_name="a",
+    display_order=3,
+    custom_attributes={"href": "/habits", "data-navigate-to": "habits", "id": "ic2si"}
+)
+i49yw = Link(
+    name="i49yw",
+    description="Link element",
+    label="Categories & Profile",
+    url="/categories-profile",
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i49yw",
+    tag_name="a",
+    display_order=4,
+    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile", "id": "i49yw"}
+)
+iozdl = ViewContainer(
+    name="iozdl",
+    description=" component",
+    view_elements={itnti, i4iok, i4ltd, ic2si, i49yw},
+    styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")),
+    component_id="iozdl",
+    display_order=1,
+    custom_attributes={"id": "iozdl"}
+)
+iozdl_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
+iozdl.layout = iozdl_layout
+i7rsd = ViewContainer(
+    name="i7rsd",
+    description="nav container",
+    view_elements={i6gek, iozdl},
+    styling=Styling(size=Size(height="64px", padding="0 32px", font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif"), position=Position(p_type=PositionType.STICKY, top="0", z_index=50, display="flex"), color=Color(background_color="#ffffff", color_palette="default", border_bottom="1px solid #e8e5f0", box_shadow="0 1px 3px rgba(0,0,0,0.06)"), layout=Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")),
+    component_id="i7rsd",
+    tag_name="nav",
+    display_order=0,
+    css_classes=["assistant-nav-header"],
+    custom_attributes={"id": "i7rsd"}
+)
+i7rsd_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
+i7rsd.layout = i7rsd_layout
 p_7 = Text(
     name="p_7",
     content="DIRECTION, NOT PERFECTION",
@@ -819,12 +1183,10 @@ p_8 = Text(
     tag_name="p",
     display_order=2
 )
-div_10 = ViewContainer(
-    name="div_10",
-    description="div container",
+component_9 = ViewContainer(
+    name="Component_9",
+    description=" component",
     view_elements={p_7, h1_2, p_8},
-    component_id="container_div_10",
-    tag_name="div",
     display_order=0
 )
 a_4 = Text(
@@ -839,7 +1201,7 @@ a_4 = Text(
 header_2 = ViewContainer(
     name="header_2",
     description="header container",
-    view_elements={div_10, a_4},
+    view_elements={component_9, a_4},
     component_id="container_header_2",
     tag_name="header",
     display_order=0,
@@ -872,17 +1234,17 @@ table_resolution_resolutions_col_6 = LookupColumn(label="Category", path=table_r
 table_resolution_resolutions = Table(
     name="table_resolution_resolutions",
     title="Your resolutions and target dates",
+    primary_color="#2c3e50",
     show_header=True,
     striped_rows=False,
     show_pagination=True,
     rows_per_page=5,
     action_buttons=True,
     columns=[table_resolution_resolutions_col_0, table_resolution_resolutions_col_1, table_resolution_resolutions_col_2, table_resolution_resolutions_col_3, table_resolution_resolutions_col_4, table_resolution_resolutions_col_5, table_resolution_resolutions_col_6],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
     component_id="table-resolution-resolutions",
     display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Your resolutions and target dates", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_gguigpgu0_mwta93ho_wma", "columns": "[{\"field\": \"title\", \"label\": \"Title\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"updatedAt\", \"label\": \"Updated at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"targetDate\", \"label\": \"Target date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"status\", \"label\": \"Status\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Category\", \"label\": \"Category\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_9iv0v3742_mwta93ho_5ev\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-resolution-resolutions"}
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Your resolutions and target dates", "data-source": "class_gguigpgu0_mwta93ho_wma", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"title\", \"label\": \"Title\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"updatedAt\", \"label\": \"Updated at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"targetDate\", \"label\": \"Target date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"status\", \"label\": \"Status\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Category\", \"label\": \"Category\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_9iv0v3742_mwta93ho_5ev\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-resolution-resolutions"}
 )
 table_resolution_resolutions_binding = None
 try:
@@ -890,19 +1252,17 @@ try:
 except NameError:
     pass
 table_resolution_resolutions.data_binding = table_resolution_resolutions_binding
-div_11 = ViewContainer(
-    name="div_11",
-    description="div container",
+component_10 = ViewContainer(
+    name="Component_10",
+    description=" component",
     view_elements={table_resolution_resolutions},
-    component_id="container_div_11",
-    tag_name="div",
     display_order=2,
     css_classes=["app-panel", "app-table"]
 )
-button = Button(
-    name="button",
+action_button = Button(
+    name="action_button",
     description="Button component",
-    label="Activate selected",
+    label="Activate selectedActivate selected",
     buttonType=ButtonType.CustomizableButton,
     actionType=ButtonActionType.RunMethod,
     method_btn=Resolution_m_activate,
@@ -910,12 +1270,13 @@ button = Button(
     is_instance_method=True,
     tag_name="button",
     display_order=0,
+    css_classes=["action-button-component"],
     custom_attributes={"type": "button", "data-button-label": "Activate selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_c7r3mhje4_mwta93ho_i4a", "data-instance-source": "table-resolution-resolutions", "instance-method": "false"}
 )
-button_2 = Button(
-    name="button_2",
+action_button_2 = Button(
+    name="action_button_2",
     description="Button component",
-    label="Pause selected",
+    label="Pause selectedPause selected",
     buttonType=ButtonType.CustomizableButton,
     actionType=ButtonActionType.RunMethod,
     method_btn=Resolution_m_pause,
@@ -923,12 +1284,13 @@ button_2 = Button(
     is_instance_method=True,
     tag_name="button",
     display_order=1,
+    css_classes=["action-button-component"],
     custom_attributes={"type": "button", "data-button-label": "Pause selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_0ymg4iyyr_mwta93ho_6zl", "data-instance-source": "table-resolution-resolutions", "instance-method": "false"}
 )
-button_3 = Button(
-    name="button_3",
+action_button_3 = Button(
+    name="action_button_3",
     description="Button component",
-    label="Complete selected",
+    label="Complete selectedComplete selected",
     buttonType=ButtonType.CustomizableButton,
     actionType=ButtonActionType.RunMethod,
     method_btn=Resolution_m_complete,
@@ -936,6 +1298,7 @@ button_3 = Button(
     is_instance_method=True,
     tag_name="button",
     display_order=2,
+    css_classes=["action-button-component"],
     custom_attributes={"type": "button", "data-button-label": "Complete selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_xmxb055gg_mwta93ho_nzw", "data-instance-source": "table-resolution-resolutions", "instance-method": "false"}
 )
 a_5 = Text(
@@ -946,19 +1309,17 @@ a_5 = Text(
     display_order=3,
     custom_attributes={"href": "/resolution-detail"}
 )
-div_12 = ViewContainer(
-    name="div_12",
-    description="div container",
-    view_elements={button, button_2, button_3, a_5},
-    component_id="container_div_12",
-    tag_name="div",
+component_11 = ViewContainer(
+    name="Component_11",
+    description=" component",
+    view_elements={action_button, action_button_2, action_button_3, a_5},
     display_order=3,
     css_classes=["app-actions"]
 )
 section_7 = ViewContainer(
     name="section_7",
     description="section container",
-    view_elements={h2_6, p_9, div_11, div_12},
+    view_elements={h2_6, p_9, component_10, component_11},
     component_id="container_section_7",
     tag_name="section",
     display_order=1,
@@ -1020,628 +1381,649 @@ form = Form(
     display_order=1,
     css_classes=["app-form"]
 )
-div_13 = ViewContainer(
-    name="div_13",
-    description="div container",
+component_12 = ViewContainer(
+    name="Component_12",
+    description=" component",
     view_elements={p_10, form},
-    component_id="container_div_13",
-    tag_name="div",
     display_order=1,
     css_classes=["app-panel", "app-accent"]
 )
 section_8 = ViewContainer(
     name="section_8",
     description="section container",
-    view_elements={h2_7, div_13},
+    view_elements={h2_7, component_12},
     component_id="container_section_8",
     tag_name="section",
     display_order=2,
     css_classes=["app-wrap"]
 )
-main_2 = ViewContainer(
-    name="main_2",
+i3qig = ViewContainer(
+    name="i3qig",
     description="main container",
     view_elements={header_2, section_7, section_8},
     styling=Styling(size=Size(padding="24px 16px", margin="0 auto", max_width="1200px"), color=Color(color_palette="default")),
-    component_id="container_main_2",
+    component_id="i3qig",
     tag_name="main",
     display_order=1,
-    css_classes=["assistant-main"]
+    css_classes=["assistant-main"],
+    custom_attributes={"id": "i3qig"}
 )
-wrapper_2.view_elements = {nav_2, main_2}
+in9bt.view_elements = {i7rsd, i3qig}
 
 
-# Screen: wrapper_3
-wrapper_3 = Screen(name="wrapper_3", description="Resolution Detail", view_elements=set(), route_path="/resolution-detail", screen_size="Medium")
-wrapper_3_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
-wrapper_3_styling_pos = Position()
-wrapper_3_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
-wrapper_3_styling = Styling(size=wrapper_3_styling_size, position=wrapper_3_styling_pos, color=wrapper_3_styling_color)
-wrapper_3.styling = wrapper_3_styling
-wrapper_3.component_id = "page-resolution-detail"
-text_3 = Text(
-    name="text_3",
+# Screen: iund
+iund = Screen(name="iund", description="Dashboard", view_elements=set(), is_main_page=True, route_path="/dashboard", screen_size="Medium")
+iund_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
+iund_styling_pos = Position()
+iund_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
+iund_styling = Styling(size=iund_styling_size, position=iund_styling_pos, color=iund_styling_color)
+iund.styling = iund_styling
+iund.component_id = "page-dashboard"
+ifaa = Text(
+    name="ifaa",
     content="Stride",
     description="Text element",
     styling=Styling(size=Size(font_size="1.25rem", font_weight="700", letter_spacing="-0.01em"), color=Color(text_color="#23213a", color_palette="default")),
-    display_order=0
+    component_id="ifaa",
+    display_order=0,
+    custom_attributes={"id": "ifaa"}
 )
-link_11 = Link(
-    name="link_11",
+ivu8 = Link(
+    name="ivu8",
     description="Link element",
     label="Dashboard",
     url="/dashboard",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    component_id="ivu8",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard"}
+    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard", "id": "ivu8"}
 )
-link_12 = Link(
-    name="link_12",
+i39yh = Link(
+    name="i39yh",
     description="Link element",
     label="Resolutions",
     url="/resolutions",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i39yh",
     tag_name="a",
     display_order=1,
-    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions"}
+    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions", "id": "i39yh"}
 )
-link_13 = Link(
-    name="link_13",
+i2dvl = Link(
+    name="i2dvl",
     description="Link element",
     label="Resolution Detail",
     url="/resolution-detail",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i2dvl",
     tag_name="a",
     display_order=2,
-    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail"}
+    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail", "id": "i2dvl"}
 )
-link_14 = Link(
-    name="link_14",
+i2j35 = Link(
+    name="i2j35",
     description="Link element",
     label="Habits",
     url="/habits",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i2j35",
     tag_name="a",
     display_order=3,
-    custom_attributes={"href": "/habits", "data-navigate-to": "habits"}
+    custom_attributes={"href": "/habits", "data-navigate-to": "habits", "id": "i2j35"}
 )
-link_15 = Link(
-    name="link_15",
+i9i9g = Link(
+    name="i9i9g",
     description="Link element",
     label="Categories & Profile",
     url="/categories-profile",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="i9i9g",
     tag_name="a",
     display_order=4,
-    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile"}
+    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile", "id": "i9i9g"}
 )
-component_3 = ViewContainer(
-    name="Component_3",
+iisl = ViewContainer(
+    name="iisl",
     description=" component",
-    view_elements={link_11, link_12, link_13, link_14, link_15},
+    view_elements={ivu8, i39yh, i2dvl, i2j35, i9i9g},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")),
-    display_order=1
+    component_id="iisl",
+    display_order=1,
+    custom_attributes={"id": "iisl"}
 )
-component_3_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
-component_3.layout = component_3_layout
-nav_3 = ViewContainer(
-    name="nav_3",
+iisl_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
+iisl.layout = iisl_layout
+iwpp = ViewContainer(
+    name="iwpp",
     description="nav container",
-    view_elements={text_3, component_3},
+    view_elements={ifaa, iisl},
     styling=Styling(size=Size(height="64px", padding="0 32px", font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif"), position=Position(p_type=PositionType.STICKY, top="0", z_index=50, display="flex"), color=Color(background_color="#ffffff", color_palette="default", border_bottom="1px solid #e8e5f0", box_shadow="0 1px 3px rgba(0,0,0,0.06)"), layout=Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")),
-    component_id="container_nav_3",
+    component_id="iwpp",
     tag_name="nav",
     display_order=0,
-    css_classes=["assistant-nav-header"]
+    css_classes=["assistant-nav-header"],
+    custom_attributes={"id": "iwpp"}
 )
-nav_3_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
-nav_3.layout = nav_3_layout
-p_11 = Text(
-    name="p_11",
-    content="GOAL WORKSPACE",
+iwpp_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
+iwpp.layout = iwpp_layout
+p = Text(
+    name="p",
+    content="YOUR SPACE TO GROW",
     description="Text element",
     tag_name="p",
     display_order=0,
     css_classes=["app-eyebrow"]
 )
-h1_3 = Text(
-    name="h1_3",
-    content="Keep the goal moving.",
+h1 = Text(
+    name="h1",
+    content="Make the next step count.",
     description="Text element",
     tag_name="h1",
     display_order=1
 )
-p_12 = Text(
-    name="p_12",
-    content="Manage milestones and record the actions behind your progress.",
+p_2 = Text(
+    name="p_2",
+    content="See your goals, keep your habits close, and make progress visible.",
     description="Text element",
     tag_name="p",
     display_order=2
 )
-div_18 = ViewContainer(
-    name="div_18",
-    description="div container",
-    view_elements={p_11, h1_3, p_12},
-    component_id="container_div_18",
-    tag_name="div",
+component = ViewContainer(
+    name="Component",
+    description=" component",
+    view_elements={p, h1, p_2},
     display_order=0
 )
-a_6 = Text(
-    name="a_6",
-    content="← All resolutions",
+a = Text(
+    name="a",
+    content="Manage resolutions",
     description="Text element",
     tag_name="a",
     display_order=1,
-    css_classes=["app-link"],
+    css_classes=["ds-btn", "ds-btn-primary"],
     custom_attributes={"href": "/resolutions"}
 )
-header_3 = ViewContainer(
-    name="header_3",
+header = ViewContainer(
+    name="header",
     description="header container",
-    view_elements={div_18, a_6},
-    component_id="container_header_3",
+    view_elements={component, a},
+    component_id="container_header",
     tag_name="header",
     display_order=0,
     css_classes=["app-head"]
 )
-h2_8 = Text(
-    name="h2_8",
-    content="Break it down. Build it up.",
+h2 = Text(
+    name="h2",
+    content="Momentum starts here",
     description="Text element",
     tag_name="h2",
     display_order=0
 )
-p_13 = Text(
-    name="p_13",
-    content="Small milestones give your bigger goal a path forward.",
+p_3 = Text(
+    name="p_3",
+    content="Make room for the small actions that move your bigger goals forward.",
     description="Text element",
     tag_name="p",
     display_order=1
 )
-div_19 = ViewContainer(
-    name="div_19",
-    description="div container",
-    view_elements={h2_8, p_13},
-    component_id="container_div_19",
-    tag_name="div",
+component_2 = ViewContainer(
+    name="Component_2",
+    description=" component",
+    view_elements={h2, p_3},
     display_order=0
 )
-a_7 = Text(
-    name="a_7",
-    content="Explore habits →",
+a_2 = Text(
+    name="a_2",
+    content="Check your habits →",
     description="Text element",
     tag_name="a",
     display_order=1,
     custom_attributes={"href": "/habits"}
 )
-section_9 = ViewContainer(
-    name="section_9",
+section = ViewContainer(
+    name="section",
     description="section container",
-    view_elements={div_19, a_7},
-    component_id="container_section_9",
+    view_elements={component_2, a_2},
+    component_id="container_section",
     tag_name="section",
     display_order=1,
     css_classes=["app-band"]
 )
-h2_9 = Text(
-    name="h2_9",
-    content="Goal details",
+h2_2 = Text(
+    name="h2_2",
+    content="Your overview",
     description="Text element",
     tag_name="h2",
     display_order=0,
     css_classes=["app-section-title"]
 )
-table_resolution_resolution_detail_col_0 = FieldColumn(label="Title", field=Resolution_title)
-table_resolution_resolution_detail_col_1 = FieldColumn(label="Description", field=Resolution_description)
-table_resolution_resolution_detail_col_2 = FieldColumn(label="Created at", field=Resolution_createdAt)
-table_resolution_resolution_detail_col_3 = FieldColumn(label="Updated at", field=Resolution_updatedAt)
-table_resolution_resolution_detail_col_4 = FieldColumn(label="Target date", field=Resolution_targetDate)
-table_resolution_resolution_detail_col_5 = FieldColumn(label="Status", field=Resolution_status)
-table_resolution_resolution_detail_col_6_path = bind_association_end(domain_model, "category")
-table_resolution_resolution_detail_col_6 = LookupColumn(label="Category", path=table_resolution_resolution_detail_col_6_path, field=Category_name)
-table_resolution_resolution_detail = Table(
-    name="table_resolution_resolution_detail",
-    title="Goal details and status",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    columns=[table_resolution_resolution_detail_col_0, table_resolution_resolution_detail_col_1, table_resolution_resolution_detail_col_2, table_resolution_resolution_detail_col_3, table_resolution_resolution_detail_col_4, table_resolution_resolution_detail_col_5, table_resolution_resolution_detail_col_6],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    component_id="table-resolution-resolution-detail",
-    display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Goal details and status", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_gguigpgu0_mwta93ho_wma", "columns": "[{\"field\": \"title\", \"label\": \"Title\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"updatedAt\", \"label\": \"Updated at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"targetDate\", \"label\": \"Target date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"status\", \"label\": \"Status\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Category\", \"label\": \"Category\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_9iv0v3742_mwta93ho_5ev\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-resolution-resolution-detail"}
-)
-table_resolution_resolution_detail_binding = None
-try:
-    table_resolution_resolution_detail_binding = build_data_binding(domain_model, "Resolution", name="ResolutionDataBinding")
-except NameError:
-    pass
-table_resolution_resolution_detail.data_binding = table_resolution_resolution_detail_binding
-div_20 = ViewContainer(
-    name="div_20",
-    description="div container",
-    view_elements={table_resolution_resolution_detail},
-    component_id="container_div_20",
-    tag_name="div",
-    display_order=1,
-    css_classes=["app-panel", "app-table"]
-)
-button_5 = Button(
-    name="button_5",
-    description="Button component",
-    label="Activate selected",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=Resolution_m_activate,
-    instance_source="table-resolution-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
-    display_order=0,
-    custom_attributes={"type": "button", "data-button-label": "Activate selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_c7r3mhje4_mwta93ho_i4a", "data-instance-source": "table-resolution-resolution-detail", "instance-method": "false"}
-)
-button_6 = Button(
-    name="button_6",
-    description="Button component",
-    label="Pause selected",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=Resolution_m_pause,
-    instance_source="table-resolution-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
-    display_order=1,
-    custom_attributes={"type": "button", "data-button-label": "Pause selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_0ymg4iyyr_mwta93ho_6zl", "data-instance-source": "table-resolution-resolution-detail", "instance-method": "false"}
-)
-button_7 = Button(
-    name="button_7",
-    description="Button component",
-    label="Complete selected",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=Resolution_m_complete,
-    instance_source="table-resolution-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
-    display_order=2,
-    custom_attributes={"type": "button", "data-button-label": "Complete selected", "data-action-type": "run-method", "data-method-class": "class_gguigpgu0_mwta93ho_wma", "data-method": "method_xmxb055gg_mwta93ho_nzw", "data-instance-source": "table-resolution-resolution-detail", "instance-method": "false"}
-)
-button_8 = Button(
-    name="button_8",
-    description="Button component",
-    label="Edit Resolution",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=ProgressEntry_m_edit,
-    instance_source="table-progressentry-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
-    display_order=3,
-    custom_attributes={"type": "button", "data-button-label": "Edit Resolution", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_j4wm0kfj3_mwta93ho_k3z", "data-instance-source": "table-progressentry-resolution-detail", "instance-method": "false"}
-)
-div_21 = ViewContainer(
-    name="div_21",
-    description="div container",
-    view_elements={button_5, button_6, button_7, button_8},
-    component_id="container_div_21",
-    tag_name="div",
-    display_order=2,
-    css_classes=["app-actions"]
-)
-section_10 = ViewContainer(
-    name="section_10",
-    description="section container",
-    view_elements={h2_9, div_20, div_21},
-    component_id="container_section_10",
-    tag_name="section",
-    display_order=2,
-    css_classes=["app-wrap"]
-)
-h2_10 = Text(
-    name="h2_10",
-    content="Milestones",
-    description="Text element",
-    tag_name="h2",
-    display_order=0,
-    css_classes=["app-section-title"]
-)
-p_14 = Text(
-    name="p_14",
-    content="Select a milestone to mark it complete.",
+p_4 = Text(
+    name="p_4",
+    content="A live snapshot of your goals and routines.",
     description="Text element",
     tag_name="p",
     display_order=1,
     css_classes=["app-section-sub"]
 )
-table_subgoal_resolution_detail_col_0 = FieldColumn(label="Title", field=SubGoal_title)
-table_subgoal_resolution_detail_col_1 = FieldColumn(label="Description", field=SubGoal_description)
-table_subgoal_resolution_detail_col_2 = FieldColumn(label="Created at", field=SubGoal_createdAt)
-table_subgoal_resolution_detail_col_3 = FieldColumn(label="Target date", field=SubGoal_targetDate)
-table_subgoal_resolution_detail_col_4 = FieldColumn(label="Completed", field=SubGoal_completed)
-table_subgoal_resolution_detail = Table(
-    name="table_subgoal_resolution_detail",
-    title="Goal milestones",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    columns=[table_subgoal_resolution_detail_col_0, table_subgoal_resolution_detail_col_1, table_subgoal_resolution_detail_col_2, table_subgoal_resolution_detail_col_3, table_subgoal_resolution_detail_col_4],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    component_id="table-subgoal-resolution-detail",
+i3yma = MetricCard(
+    name="i3yma",
+    metric_title="Total resolutions",
+    format="number",
+    value_color="#2c3e50",
+    value_size=32,
+    show_trend=True,
+    positive_color="#27ae60",
+    negative_color="#e74c3c",
+    primary_color="#2c3e50",
+    styling=Styling(size=Size(width="100%", margin="8px 0", min_height="140px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default")),
+    component_id="i3yma",
     display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Goal milestones", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_aokyvix9v_mwta93ho_82n", "columns": "[{\"field\": \"title\", \"label\": \"Title\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"targetDate\", \"label\": \"Target date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"completed\", \"label\": \"Completed\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-subgoal-resolution-detail"}
+    css_classes=["metric-card-component"],
+    custom_attributes={"metric-title": "Total resolutions", "data-source": "class_gguigpgu0_mwta93ho_wma", "data-field": "", "aggregation": "count", "data-endpoint": "", "format": "number", "value-color": "#2c3e50", "value-size": "32", "show-trend": "true", "positive-color": "#27ae60", "negative-color": "#e74c3c", "id": "i3yma"}
 )
-table_subgoal_resolution_detail_binding = None
+i3yma_binding = None
 try:
-    table_subgoal_resolution_detail_binding = build_data_binding(domain_model, "SubGoal", name="SubGoalDataBinding")
+    i3yma_binding = build_data_binding(domain_model, "Resolution", name="Total_resolutions_binding", aggregation="count")
 except NameError:
     pass
-table_subgoal_resolution_detail.data_binding = table_subgoal_resolution_detail_binding
-div_22 = ViewContainer(
-    name="div_22",
-    description="div container",
-    view_elements={table_subgoal_resolution_detail},
-    component_id="container_div_22",
-    tag_name="div",
+i3yma.data_binding = i3yma_binding
+component_3 = ViewContainer(
+    name="Component_3",
+    description=" component",
+    view_elements={i3yma},
     display_order=2,
-    css_classes=["app-panel", "app-table"]
+    css_classes=["app-panel"]
 )
-button_9 = Button(
-    name="button_9",
-    description="Button component",
-    label="Complete selected milestone",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=SubGoal_m_markComplete,
-    instance_source="table-subgoal-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
-    display_order=0,
-    custom_attributes={"type": "button", "data-button-label": "Complete selected milestone", "data-action-type": "run-method", "data-method-class": "class_aokyvix9v_mwta93ho_82n", "data-method": "method_f7pkjcbpk_mwta93ho_prj", "data-instance-source": "table-subgoal-resolution-detail", "instance-method": "false"}
-)
-button_10 = Button(
-    name="button_10",
-    description="Button component",
-    label="Add SubGoal",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.Create,
-    entity_class=SubGoal,
-    instance_source="table-subgoal-resolution-detail",
-    tag_name="button",
-    display_order=1,
-    custom_attributes={"type": "button", "data-button-label": "Add SubGoal", "data-action-type": "create", "data-entity-class": "class_aokyvix9v_mwta93ho_82n", "data-instance-source": "table-subgoal-resolution-detail"}
-)
-div_23 = ViewContainer(
-    name="div_23",
-    description="div container",
-    view_elements={button_9, button_10},
-    component_id="container_div_23",
-    tag_name="div",
-    display_order=3,
-    css_classes=["app-actions"]
-)
-section_11 = ViewContainer(
-    name="section_11",
+section_2 = ViewContainer(
+    name="section_2",
     description="section container",
-    view_elements={h2_10, p_14, div_22, div_23},
-    component_id="container_section_11",
+    view_elements={h2_2, p_4, component_3},
+    component_id="container_section_2",
     tag_name="section",
-    display_order=3,
+    display_order=2,
     css_classes=["app-wrap"]
 )
-h2_11 = Text(
-    name="h2_11",
-    content="Progress entries",
+h2_3 = Text(
+    name="h2_3",
+    content="Goals in motion",
     description="Text element",
     tag_name="h2",
     display_order=0,
     css_classes=["app-section-title"]
 )
-p_15 = Text(
-    name="p_15",
-    content="Select an entry to edit or remove it.",
-    description="Text element",
-    tag_name="p",
-    display_order=1,
-    css_classes=["app-section-sub"]
-)
-table_progressentry_resolution_detail_col_0 = FieldColumn(label="Date", field=ProgressEntry_date)
-table_progressentry_resolution_detail_col_1 = FieldColumn(label="Notes", field=ProgressEntry_notes)
-table_progressentry_resolution_detail_col_2 = FieldColumn(label="Amount", field=ProgressEntry_amount)
-table_progressentry_resolution_detail_col_3_path = bind_association_end(domain_model, "resolution")
-table_progressentry_resolution_detail_col_3 = LookupColumn(label="Resolution", path=table_progressentry_resolution_detail_col_3_path, field=Resolution_title)
-table_progressentry_resolution_detail_col_4_path = bind_association_end(domain_model, "habit")
-table_progressentry_resolution_detail_col_4 = LookupColumn(label="Habit", path=table_progressentry_resolution_detail_col_4_path, field=Habit_name)
-table_progressentry_resolution_detail = Table(
-    name="table_progressentry_resolution_detail",
-    title="Recorded progress",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    columns=[table_progressentry_resolution_detail_col_0, table_progressentry_resolution_detail_col_1, table_progressentry_resolution_detail_col_2, table_progressentry_resolution_detail_col_3, table_progressentry_resolution_detail_col_4],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    component_id="table-progressentry-resolution-detail",
+iax6v = MetricCard(
+    name="iax6v",
+    metric_title="Active resolutions",
+    format="number",
+    value_color="#2c3e50",
+    value_size=32,
+    show_trend=True,
+    positive_color="#27ae60",
+    negative_color="#e74c3c",
+    primary_color="#2c3e50",
+    styling=Styling(size=Size(width="100%", margin="8px 0", min_height="140px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default")),
+    component_id="iax6v",
     display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Recorded progress", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_kv587q4au_mwta93ho_rhu", "columns": "[{\"field\": \"date\", \"label\": \"Date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"notes\", \"label\": \"Notes\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"amount\", \"label\": \"Amount\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Resolution\", \"label\": \"Resolution\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_gguigpgu0_mwta93ho_wma\", \"lookupField\": \"title\", \"_expanded\": false}, {\"field\": \"Habit\", \"label\": \"Habit\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_k6uzcgxhn_mwta93ho_7t5\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-progressentry-resolution-detail"}
+    css_classes=["metric-card-component"],
+    custom_attributes={"metric-title": "Active resolutions", "data-source": "class_gguigpgu0_mwta93ho_wma", "data-field": "", "aggregation": "count", "data-endpoint": "", "format": "number", "value-color": "#2c3e50", "value-size": "32", "show-trend": "true", "positive-color": "#27ae60", "negative-color": "#e74c3c", "filter": "status == ACTIVE", "id": "iax6v"}
 )
-table_progressentry_resolution_detail_binding = None
+iax6v_binding = None
 try:
-    table_progressentry_resolution_detail_binding = build_data_binding(domain_model, "ProgressEntry", name="ProgressEntryDataBinding")
+    iax6v_binding = build_data_binding(domain_model, "Resolution", name="Active_resolutions_binding", filter_expression="status == ACTIVE", aggregation="count")
 except NameError:
     pass
-table_progressentry_resolution_detail.data_binding = table_progressentry_resolution_detail_binding
-div_24 = ViewContainer(
-    name="div_24",
-    description="div container",
-    view_elements={table_progressentry_resolution_detail},
-    component_id="container_div_24",
-    tag_name="div",
-    display_order=2,
-    css_classes=["app-panel", "app-table"]
-)
-button_11 = Button(
-    name="button_11",
-    description="Button component",
-    label="Edit selected entry",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=ProgressEntry_m_edit,
-    instance_source="table-progressentry-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
-    display_order=0,
-    custom_attributes={"type": "button", "data-button-label": "Edit selected entry", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_j4wm0kfj3_mwta93ho_k3z", "data-instance-source": "table-progressentry-resolution-detail", "instance-method": "false"}
-)
-button_12 = Button(
-    name="button_12",
-    description="Button component",
-    label="Remove selected entry",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=ProgressEntry_m_remove,
-    instance_source="table-progressentry-resolution-detail",
-    is_instance_method=True,
-    tag_name="button",
+iax6v.data_binding = iax6v_binding
+component_4 = ViewContainer(
+    name="Component_4",
+    description=" component",
+    view_elements={iax6v},
     display_order=1,
-    custom_attributes={"type": "button", "data-button-label": "Remove selected entry", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_nx15n7oq1_mwta93ho_hbv", "data-instance-source": "table-progressentry-resolution-detail", "instance-method": "false"}
+    css_classes=["app-panel"]
 )
-button_13 = Button(
-    name="button_13",
-    description="Button component",
-    label="Add ProgressEntry",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.Create,
-    entity_class=ProgressEntry,
-    instance_source="table-progressentry-resolution-detail",
-    tag_name="button",
-    display_order=2,
-    custom_attributes={"type": "button", "data-button-label": "Add ProgressEntry", "data-action-type": "create", "data-entity-class": "class_kv587q4au_mwta93ho_rhu", "data-instance-source": "table-progressentry-resolution-detail"}
-)
-div_25 = ViewContainer(
-    name="div_25",
-    description="div container",
-    view_elements={button_11, button_12, button_13},
-    component_id="container_div_25",
-    tag_name="div",
-    display_order=3,
-    css_classes=["app-actions"]
-)
-section_12 = ViewContainer(
-    name="section_12",
+section_3 = ViewContainer(
+    name="section_3",
     description="section container",
-    view_elements={h2_11, p_15, div_24, div_25},
-    component_id="container_section_12",
+    view_elements={h2_3, component_4},
+    component_id="container_section_3",
+    tag_name="section",
+    display_order=3,
+    css_classes=["app-wrap"]
+)
+h2_4 = Text(
+    name="h2_4",
+    content="Habit momentum",
+    description="Text element",
+    tag_name="h2",
+    display_order=0,
+    css_classes=["app-section-title"]
+)
+icvsf = MetricCard(
+    name="icvsf",
+    metric_title="Average habit streak",
+    format="number",
+    value_color="#2c3e50",
+    value_size=32,
+    show_trend=True,
+    positive_color="#27ae60",
+    negative_color="#e74c3c",
+    primary_color="#2c3e50",
+    styling=Styling(size=Size(width="100%", margin="8px 0", min_height="140px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default")),
+    component_id="icvsf",
+    display_order=0,
+    css_classes=["metric-card-component"],
+    custom_attributes={"metric-title": "Average habit streak", "data-source": "class_k6uzcgxhn_mwta93ho_7t5", "data-field": "attr_9rxhfuz9j_mwta93ho_6x4", "aggregation": "avg", "data-endpoint": "", "format": "number", "value-color": "#2c3e50", "value-size": "32", "show-trend": "true", "positive-color": "#27ae60", "negative-color": "#e74c3c", "id": "icvsf"}
+)
+icvsf_binding = None
+try:
+    icvsf_binding = build_data_binding(domain_model, "Habit", data_field="currentStreak", name="Average_habit_streak_binding", aggregation="average")
+except NameError:
+    pass
+icvsf.data_binding = icvsf_binding
+component_5 = ViewContainer(
+    name="Component_5",
+    description=" component",
+    view_elements={icvsf},
+    display_order=1,
+    css_classes=["app-panel"]
+)
+section_4 = ViewContainer(
+    name="section_4",
+    description="section container",
+    view_elements={h2_4, component_5},
+    component_id="container_section_4",
     tag_name="section",
     display_order=4,
     css_classes=["app-wrap"]
 )
-main_3 = ViewContainer(
-    name="main_3",
+p_5 = Text(
+    name="p_5",
+    content="See how your goals are distributed across each stage.",
+    description="Text element",
+    tag_name="p",
+    display_order=0,
+    css_classes=["app-section-sub"]
+)
+iiro4_series_0_binding = None
+try:
+    iiro4_series_0_binding = build_data_binding(domain_model, "Resolution", label_field="status", name="ResolutionDataBinding", aggregation="count")
+except NameError:
+    pass
+iiro4_series_0_styling_size = Size()
+iiro4_series_0_styling_pos = Position()
+iiro4_series_0_styling_color = Color(background_color="#00C49F", color_palette="default", primary_color="#00C49F")
+iiro4_series_0_styling = Styling(size=iiro4_series_0_styling_size, position=iiro4_series_0_styling_pos, color=iiro4_series_0_styling_color)
+iiro4_series_0 = Series(name="Resolution", label="Resolution", data_binding=iiro4_series_0_binding, styling=iiro4_series_0_styling)
+iiro4 = PieChart(
+    name="iiro4",
+    series=[iiro4_series_0],
+    title="Resolutions by status",
+    show_legend=True,
+    legend_position=Alignment.BOTTOM,
+    show_labels=True,
+    label_position=Alignment.INSIDE,
+    padding_angle=0,
+    inner_radius=0,
+    outer_radius=80,
+    start_angle=0,
+    end_angle=360,
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
+    component_id="iiro4",
+    display_order=0,
+    css_classes=["pie-chart-component"],
+    custom_attributes={"chart-title": "Resolutions by status", "show-legend": "true", "legend-position": "bottom", "show-labels": "true", "label-position": "inside", "padding-angle": "0", "series": "[{\"name\": \"Resolution\", \"data-source\": \"class_gguigpgu0_mwta93ho_wma\", \"color\": \"#00C49F\", \"data\": [{\"name\": \"ACTIVE\", \"value\": 5, \"color\": \"#5546d9\"}, {\"name\": \"PLANNED\", \"value\": 3, \"color\": \"#e8b85b\"}, {\"name\": \"PAUSED\", \"value\": 2, \"color\": \"#8c87a7\"}, {\"name\": \"COMPLETED\", \"value\": 7, \"color\": \"#2a9d79\"}, {\"name\": \"ABANDONED\", \"value\": 1, \"color\": \"#c57980\"}], \"label-field\": \"attr_110qn1pl9_mwta93ho_yx3\"}]", "show-grid": "true", "aggregation": "count", "data-source": "class_gguigpgu0_mwta93ho_wma", "label-field": "attr_110qn1pl9_mwta93ho_yx3", "id": "iiro4"}
+)
+iiro4_binding = None
+try:
+    iiro4_binding = build_data_binding(domain_model, "Resolution", label_field="status", name="ResolutionDataBinding", aggregation="count")
+except NameError:
+    pass
+iiro4.data_binding = iiro4_binding
+component_6 = ViewContainer(
+    name="Component_6",
+    description=" component",
+    view_elements={iiro4},
+    display_order=1,
+    css_classes=["app-panel"]
+)
+section_5 = ViewContainer(
+    name="section_5",
+    description="section container",
+    view_elements={p_5, component_6},
+    component_id="container_section_5",
+    tag_name="section",
+    display_order=5,
+    css_classes=["app-wrap"]
+)
+h2_5 = Text(
+    name="h2_5",
+    content="Progress journal",
+    description="Text element",
+    tag_name="h2",
+    display_order=0,
+    css_classes=["app-section-title"]
+)
+p_6 = Text(
+    name="p_6",
+    content="Your recorded actions, notes, and amounts in one place.",
+    description="Text element",
+    tag_name="p",
+    display_order=1,
+    css_classes=["app-section-sub"]
+)
+table_progressentry_dashboard_col_0 = FieldColumn(label="Date", field=ProgressEntry_date)
+table_progressentry_dashboard_col_1 = FieldColumn(label="Notes", field=ProgressEntry_notes)
+table_progressentry_dashboard_col_2 = FieldColumn(label="Amount", field=ProgressEntry_amount)
+table_progressentry_dashboard_col_3_path = bind_association_end(domain_model, "resolution")
+table_progressentry_dashboard_col_3 = LookupColumn(label="Resolution", path=table_progressentry_dashboard_col_3_path, field=Resolution_title)
+table_progressentry_dashboard_col_4_path = bind_association_end(domain_model, "habit")
+table_progressentry_dashboard_col_4 = LookupColumn(label="Habit", path=table_progressentry_dashboard_col_4_path, field=Habit_name)
+table_progressentry_dashboard = Table(
+    name="table_progressentry_dashboard",
+    title="Progress journal entries",
+    primary_color="#2c3e50",
+    show_header=True,
+    striped_rows=False,
+    show_pagination=True,
+    rows_per_page=5,
+    action_buttons=True,
+    columns=[table_progressentry_dashboard_col_0, table_progressentry_dashboard_col_1, table_progressentry_dashboard_col_2, table_progressentry_dashboard_col_3, table_progressentry_dashboard_col_4],
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
+    component_id="table-progressentry-dashboard",
+    display_order=0,
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Progress journal entries", "data-source": "class_kv587q4au_mwta93ho_rhu", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"date\", \"label\": \"Date\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"notes\", \"label\": \"Notes\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"amount\", \"label\": \"Amount\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"Resolution\", \"label\": \"Resolution\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_gguigpgu0_mwta93ho_wma\", \"lookupField\": \"title\", \"_expanded\": false}, {\"field\": \"Habit\", \"label\": \"Habit\", \"columnType\": \"lookup\", \"lookupEntity\": \"class_k6uzcgxhn_mwta93ho_7t5\", \"lookupField\": \"name\", \"_expanded\": false}]", "id": "table-progressentry-dashboard"}
+)
+table_progressentry_dashboard_binding = None
+try:
+    table_progressentry_dashboard_binding = build_data_binding(domain_model, "ProgressEntry", name="ProgressEntryDataBinding")
+except NameError:
+    pass
+table_progressentry_dashboard.data_binding = table_progressentry_dashboard_binding
+imv0t = Button(
+    name="imv0t",
+    description="Button component",
+    label="editedit",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=ProgressEntry_m_edit,
+    instance_source="table-progressentry-dashboard",
+    is_instance_method=True,
+    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
+    component_id="imv0t",
+    tag_name="button",
+    display_order=0,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "edit", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_j4wm0kfj3_mwta93ho_k3z", "data-instance-source": "table-progressentry-dashboard", "instance-method": "false", "id": "imv0t"}
+)
+igt9d = Button(
+    name="igt9d",
+    description="Button component",
+    label="removeremove",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=ProgressEntry_m_remove,
+    instance_source="table-progressentry-dashboard",
+    is_instance_method=True,
+    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
+    component_id="igt9d",
+    tag_name="button",
+    display_order=1,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "remove", "data-action-type": "run-method", "data-method-class": "class_kv587q4au_mwta93ho_rhu", "data-method": "method_nx15n7oq1_mwta93ho_hbv", "data-instance-source": "table-progressentry-dashboard", "instance-method": "false", "id": "igt9d"}
+)
+iz006 = ViewContainer(
+    name="iz006",
+    description=" component",
+    view_elements={imv0t, igt9d},
+    styling=Styling(size=Size(margin="16px 0"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")),
+    component_id="iz006",
+    display_order=1,
+    css_classes=["assistant-method-buttons"],
+    custom_attributes={"id": "iz006"}
+)
+iz006_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")
+iz006.layout = iz006_layout
+component_7 = ViewContainer(
+    name="Component_7",
+    description=" component",
+    view_elements={table_progressentry_dashboard, iz006},
+    display_order=2,
+    css_classes=["app-panel", "app-table"]
+)
+a_3 = Text(
+    name="a_3",
+    content="Explore a resolution",
+    description="Text element",
+    tag_name="a",
+    display_order=0,
+    custom_attributes={"href": "/resolution-detail"}
+)
+component_8 = ViewContainer(
+    name="Component_8",
+    description=" component",
+    view_elements={a_3},
+    display_order=3,
+    css_classes=["app-actions"]
+)
+section_6 = ViewContainer(
+    name="section_6",
+    description="section container",
+    view_elements={h2_5, p_6, component_7, component_8},
+    component_id="container_section_6",
+    tag_name="section",
+    display_order=6,
+    css_classes=["app-wrap"]
+)
+iqwy5 = ViewContainer(
+    name="iqwy5",
     description="main container",
-    view_elements={header_3, section_9, section_10, section_11, section_12},
+    view_elements={header, section, section_2, section_3, section_4, section_5, section_6},
     styling=Styling(size=Size(padding="24px 16px", margin="0 auto", max_width="1200px"), color=Color(color_palette="default")),
-    component_id="container_main_3",
+    component_id="iqwy5",
     tag_name="main",
     display_order=1,
-    css_classes=["assistant-main"]
+    css_classes=["assistant-main"],
+    custom_attributes={"id": "iqwy5"}
 )
-wrapper_3.view_elements = {nav_3, main_3}
+iund.view_elements = {iwpp, iqwy5}
 
 
-# Screen: wrapper_4
-wrapper_4 = Screen(name="wrapper_4", description="Habits", view_elements=set(), route_path="/habits", screen_size="Medium")
-wrapper_4_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
-wrapper_4_styling_pos = Position()
-wrapper_4_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
-wrapper_4_styling = Styling(size=wrapper_4_styling_size, position=wrapper_4_styling_pos, color=wrapper_4_styling_color)
-wrapper_4.styling = wrapper_4_styling
-wrapper_4.component_id = "page-habits"
-text_4 = Text(
-    name="text_4",
+# Screen: iw7qpo
+iw7qpo = Screen(name="iw7qpo", description="Habits", view_elements=set(), route_path="/habits", screen_size="Medium")
+iw7qpo_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
+iw7qpo_styling_pos = Position()
+iw7qpo_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
+iw7qpo_styling = Styling(size=iw7qpo_styling_size, position=iw7qpo_styling_pos, color=iw7qpo_styling_color)
+iw7qpo.styling = iw7qpo_styling
+iw7qpo.component_id = "page-habits"
+it0pbf = Text(
+    name="it0pbf",
     content="Stride",
     description="Text element",
     styling=Styling(size=Size(font_size="1.25rem", font_weight="700", letter_spacing="-0.01em"), color=Color(text_color="#23213a", color_palette="default")),
-    display_order=0
+    component_id="it0pbf",
+    display_order=0,
+    custom_attributes={"id": "it0pbf"}
 )
-link_16 = Link(
-    name="link_16",
+ijx9yk = Link(
+    name="ijx9yk",
     description="Link element",
     label="Dashboard",
     url="/dashboard",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="ijx9yk",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard"}
+    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard", "id": "ijx9yk"}
 )
-link_17 = Link(
-    name="link_17",
+iak08s = Link(
+    name="iak08s",
     description="Link element",
     label="Resolutions",
     url="/resolutions",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="iak08s",
     tag_name="a",
     display_order=1,
-    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions"}
+    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions", "id": "iak08s"}
 )
-link_18 = Link(
-    name="link_18",
+itvn7j = Link(
+    name="itvn7j",
     description="Link element",
     label="Resolution Detail",
     url="/resolution-detail",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="itvn7j",
     tag_name="a",
     display_order=2,
-    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail"}
+    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail", "id": "itvn7j"}
 )
-link_19 = Link(
-    name="link_19",
+i8gedk = Link(
+    name="i8gedk",
     description="Link element",
     label="Habits",
     url="/habits",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
+    component_id="i8gedk",
     tag_name="a",
     display_order=3,
-    custom_attributes={"href": "/habits", "data-navigate-to": "habits"}
+    custom_attributes={"href": "/habits", "data-navigate-to": "habits", "id": "i8gedk"}
 )
-link_20 = Link(
-    name="link_20",
+itulre = Link(
+    name="itulre",
     description="Link element",
     label="Categories & Profile",
     url="/categories-profile",
     styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
+    component_id="itulre",
     tag_name="a",
     display_order=4,
-    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile"}
+    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile", "id": "itulre"}
 )
-component_4 = ViewContainer(
-    name="Component_4",
+ictloj = ViewContainer(
+    name="ictloj",
     description=" component",
-    view_elements={link_16, link_17, link_18, link_19, link_20},
+    view_elements={ijx9yk, iak08s, itvn7j, i8gedk, itulre},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")),
-    display_order=1
+    component_id="ictloj",
+    display_order=1,
+    custom_attributes={"id": "ictloj"}
 )
-component_4_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
-component_4.layout = component_4_layout
-nav_4 = ViewContainer(
-    name="nav_4",
+ictloj_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
+ictloj.layout = ictloj_layout
+idqzk4 = ViewContainer(
+    name="idqzk4",
     description="nav container",
-    view_elements={text_4, component_4},
+    view_elements={it0pbf, ictloj},
     styling=Styling(size=Size(height="64px", padding="0 32px", font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif"), position=Position(p_type=PositionType.STICKY, top="0", z_index=50, display="flex"), color=Color(background_color="#ffffff", color_palette="default", border_bottom="1px solid #e8e5f0", box_shadow="0 1px 3px rgba(0,0,0,0.06)"), layout=Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")),
-    component_id="container_nav_4",
+    component_id="idqzk4",
     tag_name="nav",
     display_order=0,
-    css_classes=["assistant-nav-header"]
+    css_classes=["assistant-nav-header"],
+    custom_attributes={"id": "idqzk4"}
 )
-nav_4_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
-nav_4.layout = nav_4_layout
+idqzk4_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
+idqzk4.layout = idqzk4_layout
 p_16 = Text(
     name="p_16",
     content="SHOW UP AGAIN",
@@ -1664,12 +2046,10 @@ p_17 = Text(
     tag_name="p",
     display_order=2
 )
-div_26 = ViewContainer(
-    name="div_26",
-    description="div container",
+component_25 = ViewContainer(
+    name="Component_25",
+    description=" component",
     view_elements={p_16, h1_4, p_17},
-    component_id="container_div_26",
-    tag_name="div",
     display_order=0
 )
 a_8 = Text(
@@ -1684,7 +2064,7 @@ a_8 = Text(
 header_4 = ViewContainer(
     name="header_4",
     description="header container",
-    view_elements={div_26, a_8},
+    view_elements={component_25, a_8},
     component_id="container_header_4",
     tag_name="header",
     display_order=0,
@@ -1704,12 +2084,10 @@ p_18 = Text(
     tag_name="p",
     display_order=1
 )
-div_27 = ViewContainer(
-    name="div_27",
-    description="div container",
+component_26 = ViewContainer(
+    name="Component_26",
+    description=" component",
     view_elements={h2_12, p_18},
-    component_id="container_div_27",
-    tag_name="div",
     display_order=0
 )
 a_9 = Text(
@@ -1723,7 +2101,7 @@ a_9 = Text(
 section_13 = ViewContainer(
     name="section_13",
     description="section container",
-    view_elements={div_27, a_9},
+    view_elements={component_26, a_9},
     component_id="container_section_13",
     tag_name="section",
     display_order=1,
@@ -1755,17 +2133,17 @@ table_habit_habits_col_6 = FieldColumn(label="Last done at", field=Habit_lastDon
 table_habit_habits = Table(
     name="table_habit_habits",
     title="Habit routines and streaks",
+    primary_color="#2c3e50",
     show_header=True,
     striped_rows=False,
     show_pagination=True,
     rows_per_page=5,
     action_buttons=True,
     columns=[table_habit_habits_col_0, table_habit_habits_col_1, table_habit_habits_col_2, table_habit_habits_col_3, table_habit_habits_col_4, table_habit_habits_col_5, table_habit_habits_col_6],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
+    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50", border_radius="12px")),
     component_id="table-habit-habits",
     display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Habit routines and streaks", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_k6uzcgxhn_mwta93ho_7t5", "columns": "[{\"field\": \"name\", \"label\": \"Name\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"frequency\", \"label\": \"Frequency\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"active\", \"label\": \"Active\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"currentStreak\", \"label\": \"Current streak\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"lastDoneAt\", \"label\": \"Last done at\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-habit-habits"}
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Habit routines and streaks", "data-source": "class_k6uzcgxhn_mwta93ho_7t5", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": "[{\"field\": \"name\", \"label\": \"Name\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"description\", \"label\": \"Description\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"frequency\", \"label\": \"Frequency\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"active\", \"label\": \"Active\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"currentStreak\", \"label\": \"Current streak\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"lastDoneAt\", \"label\": \"Last done at\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-habit-habits"}
 )
 table_habit_habits_binding = None
 try:
@@ -1773,19 +2151,17 @@ try:
 except NameError:
     pass
 table_habit_habits.data_binding = table_habit_habits_binding
-div_28 = ViewContainer(
-    name="div_28",
-    description="div container",
+component_27 = ViewContainer(
+    name="Component_27",
+    description=" component",
     view_elements={table_habit_habits},
-    component_id="container_div_28",
-    tag_name="div",
     display_order=2,
     css_classes=["app-panel", "app-table"]
 )
-button_14 = Button(
-    name="button_14",
+action_button_13 = Button(
+    name="action_button_13",
     description="Button component",
-    label="Mark selected done",
+    label="Mark selected doneMark selected done",
     buttonType=ButtonType.CustomizableButton,
     actionType=ButtonActionType.RunMethod,
     method_btn=Habit_m_markDone,
@@ -1793,12 +2169,13 @@ button_14 = Button(
     is_instance_method=True,
     tag_name="button",
     display_order=0,
+    css_classes=["action-button-component"],
     custom_attributes={"type": "button", "data-button-label": "Mark selected done", "data-action-type": "run-method", "data-method-class": "class_k6uzcgxhn_mwta93ho_7t5", "data-method": "method_b63q65ydd_mwta93ho_8l9", "data-instance-source": "table-habit-habits", "instance-method": "false"}
 )
-button_15 = Button(
-    name="button_15",
+action_button_14 = Button(
+    name="action_button_14",
     description="Button component",
-    label="Reset selected streak",
+    label="Reset selected streakReset selected streak",
     buttonType=ButtonType.CustomizableButton,
     actionType=ButtonActionType.RunMethod,
     method_btn=Habit_m_resetStreak,
@@ -1806,21 +2183,20 @@ button_15 = Button(
     is_instance_method=True,
     tag_name="button",
     display_order=1,
+    css_classes=["action-button-component"],
     custom_attributes={"type": "button", "data-button-label": "Reset selected streak", "data-action-type": "run-method", "data-method-class": "class_k6uzcgxhn_mwta93ho_7t5", "data-method": "method_wqpj7b80c_mwta93ho_fhc", "data-instance-source": "table-habit-habits", "instance-method": "false"}
 )
-div_29 = ViewContainer(
-    name="div_29",
-    description="div container",
-    view_elements={button_14, button_15},
-    component_id="container_div_29",
-    tag_name="div",
+component_28 = ViewContainer(
+    name="Component_28",
+    description=" component",
+    view_elements={action_button_13, action_button_14},
     display_order=3,
     css_classes=["app-actions"]
 )
 section_14 = ViewContainer(
     name="section_14",
     description="section container",
-    view_elements={h2_13, p_19, div_28, div_29},
+    view_elements={h2_13, p_19, component_27, component_28},
     component_id="container_section_14",
     tag_name="section",
     display_order=2,
@@ -1841,28 +2217,6 @@ p_20 = Text(
     tag_name="p",
     display_order=0
 )
-h_description = InputField(
-    name="h_description",
-    description="Text input",
-    field_type=InputFieldType.Text,
-    label="Description",
-    component_id="h-description",
-    tag_name="input",
-    display_order=2,
-    custom_attributes={"id": "h-description", "name": "description", "type": "text", "editable": True}
-)
-h_frequency = InputField(
-    name="h_frequency",
-    description="Text input",
-    field_type=InputFieldType.Text,
-    label="Frequency: DAILY, WEEKLY, MONTHLY or YEARLY",
-    required=True,
-    validationRules="required",
-    component_id="h-frequency",
-    tag_name="input",
-    display_order=1,
-    custom_attributes={"id": "h-frequency", "name": "frequency", "required": "", "type": "text", "editable": True}
-)
 h_active = InputField(
     name="h_active",
     description="Text input",
@@ -1872,6 +2226,16 @@ h_active = InputField(
     tag_name="input",
     display_order=3,
     custom_attributes={"id": "h-active", "name": "active", "type": "text", "editable": True}
+)
+h_description = InputField(
+    name="h_description",
+    description="Text input",
+    field_type=InputFieldType.Text,
+    label="Description",
+    component_id="h-description",
+    tag_name="input",
+    display_order=2,
+    custom_attributes={"id": "h-description", "name": "description", "type": "text", "editable": True}
 )
 h_name = InputField(
     name="h_name",
@@ -1885,423 +2249,81 @@ h_name = InputField(
     display_order=0,
     custom_attributes={"id": "h-name", "name": "name", "required": "", "type": "text", "editable": True}
 )
+h_frequency = InputField(
+    name="h_frequency",
+    description="Text input",
+    field_type=InputFieldType.Text,
+    label="Frequency: DAILY, WEEKLY, MONTHLY or YEARLY",
+    required=True,
+    validationRules="required",
+    component_id="h-frequency",
+    tag_name="input",
+    display_order=1,
+    custom_attributes={"id": "h-frequency", "name": "frequency", "required": "", "type": "text", "editable": True}
+)
 form_2 = Form(
     name="form_2",
     description="Form component",
-    inputFields={h_description, h_frequency, h_active, h_name},
+    inputFields={h_active, h_description, h_name, h_frequency},
     submit_label="Create habit",
     tag_name="form",
     display_order=1,
     css_classes=["app-form"]
 )
-div_30 = ViewContainer(
-    name="div_30",
-    description="div container",
+component_29 = ViewContainer(
+    name="Component_29",
+    description=" component",
     view_elements={p_20, form_2},
-    component_id="container_div_30",
-    tag_name="div",
     display_order=1,
     css_classes=["app-panel", "app-accent"]
 )
 section_15 = ViewContainer(
     name="section_15",
     description="section container",
-    view_elements={h2_14, div_30},
+    view_elements={h2_14, component_29},
     component_id="container_section_15",
     tag_name="section",
     display_order=3,
     css_classes=["app-wrap"]
 )
-main_4 = ViewContainer(
-    name="main_4",
+iap5mt = ViewContainer(
+    name="iap5mt",
     description="main container",
     view_elements={header_4, section_13, section_14, section_15},
     styling=Styling(size=Size(padding="24px 16px", margin="0 auto", max_width="1200px"), color=Color(color_palette="default")),
-    component_id="container_main_4",
+    component_id="iap5mt",
     tag_name="main",
     display_order=1,
-    css_classes=["assistant-main"]
+    css_classes=["assistant-main"],
+    custom_attributes={"id": "iap5mt"}
 )
-wrapper_4.view_elements = {nav_4, main_4}
-
-
-# Screen: wrapper_5
-wrapper_5 = Screen(name="wrapper_5", description="Categories & Profile", view_elements=set(), route_path="/categories-profile", screen_size="Medium")
-wrapper_5_styling_size = Size(font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif", min_height="100vh")
-wrapper_5_styling_pos = Position()
-wrapper_5_styling_color = Color(background_color="#f7f6fb", text_color="#23213a", color_palette="default")
-wrapper_5_styling = Styling(size=wrapper_5_styling_size, position=wrapper_5_styling_pos, color=wrapper_5_styling_color)
-wrapper_5.styling = wrapper_5_styling
-wrapper_5.component_id = "page-categories-profile"
-text_5 = Text(
-    name="text_5",
-    content="Stride",
-    description="Text element",
-    styling=Styling(size=Size(font_size="1.25rem", font_weight="700", letter_spacing="-0.01em"), color=Color(text_color="#23213a", color_palette="default")),
-    display_order=0
-)
-link_21 = Link(
-    name="link_21",
-    description="Link element",
-    label="Dashboard",
-    url="/dashboard",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
-    tag_name="a",
-    display_order=0,
-    custom_attributes={"href": "/dashboard", "data-navigate-to": "dashboard"}
-)
-link_22 = Link(
-    name="link_22",
-    description="Link element",
-    label="Resolutions",
-    url="/resolutions",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/resolutions", "data-navigate-to": "resolutions"}
-)
-link_23 = Link(
-    name="link_23",
-    description="Link element",
-    label="Resolution Detail",
-    url="/resolution-detail",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
-    tag_name="a",
-    display_order=2,
-    custom_attributes={"href": "/resolution-detail", "data-navigate-to": "resolution-detail"}
-)
-link_24 = Link(
-    name="link_24",
-    description="Link element",
-    label="Habits",
-    url="/habits",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="500", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="transparent", text_color="#69667e", color_palette="default", border_radius="16px")),
-    tag_name="a",
-    display_order=3,
-    custom_attributes={"href": "/habits", "data-navigate-to": "habits"}
-)
-link_25 = Link(
-    name="link_25",
-    description="Link element",
-    label="Categories & Profile",
-    url="/categories-profile",
-    styling=Styling(size=Size(padding="8px 16px", font_size="0.9rem", font_weight="600", text_decoration="none"), position=Position(transition="all 0.2s"), color=Color(background_color="rgba(85, 70, 217, 0.1)", text_color="#5546d9", color_palette="default", border_radius="16px")),
-    tag_name="a",
-    display_order=4,
-    custom_attributes={"href": "/categories-profile", "data-navigate-to": "categories-profile"}
-)
-component_5 = ViewContainer(
-    name="Component_5",
-    description=" component",
-    view_elements={link_21, link_22, link_23, link_24, link_25},
-    styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")),
-    display_order=1
-)
-component_5_layout = Layout(layout_type=LayoutType.FLEX, align_items="center", gap="4px")
-component_5.layout = component_5_layout
-nav_5 = ViewContainer(
-    name="nav_5",
-    description="nav container",
-    view_elements={text_5, component_5},
-    styling=Styling(size=Size(height="64px", padding="0 32px", font_family="\'Inter\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif"), position=Position(p_type=PositionType.STICKY, top="0", z_index=50, display="flex"), color=Color(background_color="#ffffff", color_palette="default", border_bottom="1px solid #e8e5f0", box_shadow="0 1px 3px rgba(0,0,0,0.06)"), layout=Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")),
-    component_id="container_nav_5",
-    tag_name="nav",
-    display_order=0,
-    css_classes=["assistant-nav-header"]
-)
-nav_5_layout = Layout(layout_type=LayoutType.FLEX, justify_content="space-between", align_items="center")
-nav_5.layout = nav_5_layout
-p_21 = Text(
-    name="p_21",
-    content="MAKE IT YOURS",
-    description="Text element",
-    tag_name="p",
-    display_order=0,
-    css_classes=["app-eyebrow"]
-)
-h1_5 = Text(
-    name="h1_5",
-    content="Your space, organized.",
-    description="Text element",
-    tag_name="h1",
-    display_order=1
-)
-p_22 = Text(
-    name="p_22",
-    content="Keep your goal categories and account details together.",
-    description="Text element",
-    tag_name="p",
-    display_order=2
-)
-div_36 = ViewContainer(
-    name="div_36",
-    description="div container",
-    view_elements={p_21, h1_5, p_22},
-    component_id="container_div_36",
-    tag_name="div",
-    display_order=0
-)
-a_10 = Text(
-    name="a_10",
-    content="Back to overview",
-    description="Text element",
-    tag_name="a",
-    display_order=1,
-    css_classes=["app-link"],
-    custom_attributes={"href": "/dashboard"}
-)
-header_5 = ViewContainer(
-    name="header_5",
-    description="header container",
-    view_elements={div_36, a_10},
-    component_id="container_header_5",
-    tag_name="header",
-    display_order=0,
-    css_classes=["app-head"]
-)
-h2_15 = Text(
-    name="h2_15",
-    content="Categories",
-    description="Text element",
-    tag_name="h2",
-    display_order=0,
-    css_classes=["app-section-title"]
-)
-p_23 = Text(
-    name="p_23",
-    content="Organize resolutions with names and colors that make sense to you.",
-    description="Text element",
-    tag_name="p",
-    display_order=1,
-    css_classes=["app-section-sub"]
-)
-table_category_categories_profile_col_0 = FieldColumn(label="Name", field=Category_name)
-table_category_categories_profile_col_1 = FieldColumn(label="Color hex", field=Category_colorHex)
-table_category_categories_profile_col_2 = FieldColumn(label="Created at", field=Category_createdAt)
-table_category_categories_profile = Table(
-    name="table_category_categories_profile",
-    title="Goal categories and colors",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    columns=[table_category_categories_profile_col_0, table_category_categories_profile_col_1, table_category_categories_profile_col_2],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    component_id="table-category-categories-profile",
-    display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Goal categories and colors", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_9iv0v3742_mwta93ho_5ev", "columns": "[{\"field\": \"name\", \"label\": \"Name\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"colorHex\", \"label\": \"Color hex\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-category-categories-profile"}
-)
-table_category_categories_profile_binding = None
-try:
-    table_category_categories_profile_binding = build_data_binding(domain_model, "Category", name="CategoryDataBinding")
-except NameError:
-    pass
-table_category_categories_profile.data_binding = table_category_categories_profile_binding
-div_37 = ViewContainer(
-    name="div_37",
-    description="div container",
-    view_elements={table_category_categories_profile},
-    component_id="container_div_37",
-    tag_name="div",
-    display_order=2,
-    css_classes=["app-panel", "app-table"]
-)
-button_17 = Button(
-    name="button_17",
-    description="Button component",
-    label="Add Category",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.Create,
-    entity_class=Category,
-    instance_source="table-category-categories-profile",
-    tag_name="button",
-    display_order=0,
-    custom_attributes={"type": "button", "data-button-label": "Add Category", "data-action-type": "create", "data-entity-class": "class_9iv0v3742_mwta93ho_5ev", "data-instance-source": "table-category-categories-profile"}
-)
-button_18 = Button(
-    name="button_18",
-    description="Button component",
-    label="Edit Category",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.Update,
-    entity_class=Category,
-    instance_source="table-category-categories-profile",
-    tag_name="button",
-    display_order=1,
-    custom_attributes={"type": "button", "data-button-label": "Edit Category", "data-action-type": "update", "data-entity-class": "class_9iv0v3742_mwta93ho_5ev", "data-instance-source": "table-category-categories-profile"}
-)
-button_19 = Button(
-    name="button_19",
-    description="Button component",
-    label="Delete Category",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.Delete,
-    entity_class=Category,
-    instance_source="table-category-categories-profile",
-    confirmation_required=True,
-    confirmation_message="Delete the selected category?",
-    tag_name="button",
-    display_order=2,
-    custom_attributes={"type": "button", "data-button-label": "Delete Category", "data-action-type": "delete", "data-entity-class": "class_9iv0v3742_mwta93ho_5ev", "data-instance-source": "table-category-categories-profile"}
-)
-div_38 = ViewContainer(
-    name="div_38",
-    description="div container",
-    view_elements={button_17, button_18, button_19},
-    component_id="container_div_38",
-    tag_name="div",
-    display_order=3,
-    css_classes=["app-actions"]
-)
-section_16 = ViewContainer(
-    name="section_16",
-    description="section container",
-    view_elements={h2_15, p_23, div_37, div_38},
-    component_id="container_section_16",
-    tag_name="section",
-    display_order=1,
-    css_classes=["app-wrap"]
-)
-h2_16 = Text(
-    name="h2_16",
-    content="Profile",
-    description="Text element",
-    tag_name="h2",
-    display_order=0,
-    css_classes=["app-section-title"]
-)
-p_24 = Text(
-    name="p_24",
-    content="Your account information and access history.",
-    description="Text element",
-    tag_name="p",
-    display_order=1,
-    css_classes=["app-section-sub"]
-)
-table_user_categories_profile_col_0 = FieldColumn(label="Full name", field=User_fullName)
-table_user_categories_profile_col_1 = FieldColumn(label="Email", field=User_email)
-table_user_categories_profile_col_2 = FieldColumn(label="Created at", field=User_createdAt)
-table_user_categories_profile_col_3 = FieldColumn(label="Last login at", field=User_lastLoginAt)
-table_user_categories_profile = Table(
-    name="table_user_categories_profile",
-    title="Your profile details",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    columns=[table_user_categories_profile_col_0, table_user_categories_profile_col_1, table_user_categories_profile_col_2, table_user_categories_profile_col_3],
-    styling=Styling(size=Size(width="100%", margin="12px 0", min_height="300px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", border_radius="12px")),
-    component_id="table-user-categories-profile",
-    display_order=0,
-    css_classes=["table-component"],
-    custom_attributes={"chart-title": "Your profile details", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "action-buttons": "true", "rows-per-page": "5", "data-source": "class_748xw64mr_mwta93ho_xxu", "columns": "[{\"field\": \"fullName\", \"label\": \"Full name\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"email\", \"label\": \"Email\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"createdAt\", \"label\": \"Created at\", \"columnType\": \"field\", \"_expanded\": false}, {\"field\": \"lastLoginAt\", \"label\": \"Last login at\", \"columnType\": \"field\", \"_expanded\": false}]", "id": "table-user-categories-profile"}
-)
-table_user_categories_profile_binding = None
-try:
-    table_user_categories_profile_binding = build_data_binding(domain_model, "User", name="UserDataBinding")
-except NameError:
-    pass
-table_user_categories_profile.data_binding = table_user_categories_profile_binding
-action_button_3 = Button(
-    name="action_button_3",
-    description="Button component",
-    label="createResolution",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=User_m_createResolution,
-    instance_source="table-user-categories-profile",
-    is_instance_method=True,
-    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    tag_name="button",
-    display_order=0,
-    css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "createResolution", "data-action-type": "run-method", "data-method-class": "class_748xw64mr_mwta93ho_xxu", "data-method": "method_tsjyzvhgf_mwta93ho_hzc", "data-instance-source": "table-user-categories-profile", "instance-method": "false"}
-)
-action_button_4 = Button(
-    name="action_button_4",
-    description="Button component",
-    label="addProgressEntry",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=User_m_addProgressEntry,
-    instance_source="table-user-categories-profile",
-    is_instance_method=True,
-    styling=Styling(size=Size(padding="6px 14px", margin="4px", font_size="13px", font_weight="600"), position=Position(display="inline-flex", cursor="pointer"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    tag_name="button",
-    display_order=1,
-    css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "addProgressEntry", "data-action-type": "run-method", "data-method-class": "class_748xw64mr_mwta93ho_xxu", "data-method": "method_lmxg0zdi0_mwta93ho_6gy", "data-instance-source": "table-user-categories-profile", "instance-method": "false"}
-)
-div_40 = ViewContainer(
-    name="div_40",
-    description="div container",
-    view_elements={action_button_3, action_button_4},
-    styling=Styling(size=Size(margin="16px 0"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")),
-    component_id="container_div_40",
-    tag_name="div",
-    display_order=1,
-    css_classes=["assistant-method-buttons"]
-)
-div_40_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="8px")
-div_40.layout = div_40_layout
-div_39 = ViewContainer(
-    name="div_39",
-    description="div container",
-    view_elements={table_user_categories_profile, div_40},
-    component_id="container_div_39",
-    tag_name="div",
-    display_order=2,
-    css_classes=["app-panel", "app-table"]
-)
-section_17 = ViewContainer(
-    name="section_17",
-    description="section container",
-    view_elements={h2_16, p_24, div_39},
-    component_id="container_section_17",
-    tag_name="section",
-    display_order=2,
-    css_classes=["app-wrap"]
-)
-main_5 = ViewContainer(
-    name="main_5",
-    description="main container",
-    view_elements={header_5, section_16, section_17},
-    styling=Styling(size=Size(padding="24px 16px", margin="0 auto", max_width="1200px"), color=Color(color_palette="default")),
-    component_id="container_main_5",
-    tag_name="main",
-    display_order=1,
-    css_classes=["assistant-main"]
-)
-wrapper_5.view_elements = {nav_5, main_5}
+iw7qpo.view_elements = {idqzk4, iap5mt}
 
 # Button events and transitions (written after all screens defined to avoid forward references)
-button_10_event_0_action_0 = Create(name="create_class_aokyvix9v_mwta93ho_82n", description="Create new class_aokyvix9v_mwta93ho_82n", target_class=SubGoal)
-button_10_event_0 = Event(name="onClick_button_10", event_type=EventType.OnClick, actions={button_10_event_0_action_0})
-button_10_event_0_action_0.triggered_by = button_10
-button_10.events = {button_10_event_0}
-button_13_event_0_action_0 = Create(name="create_class_kv587q4au_mwta93ho_rhu", description="Create new class_kv587q4au_mwta93ho_rhu", target_class=ProgressEntry)
-button_13_event_0 = Event(name="onClick_button_13", event_type=EventType.OnClick, actions={button_13_event_0_action_0})
-button_13_event_0_action_0.triggered_by = button_13
-button_13.events = {button_13_event_0}
-button_17_event_0_action_0 = Create(name="create_class_9iv0v3742_mwta93ho_5ev", description="Create new class_9iv0v3742_mwta93ho_5ev", target_class=Category)
-button_17_event_0 = Event(name="onClick_button_17", event_type=EventType.OnClick, actions={button_17_event_0_action_0})
-button_17_event_0_action_0.triggered_by = button_17
-button_17.events = {button_17_event_0}
-button_18_event_0_action_0 = Update(name="update_class_9iv0v3742_mwta93ho_5ev", description="Update class_9iv0v3742_mwta93ho_5ev", target_class=Category)
-button_18_event_0 = Event(name="onClick_button_18", event_type=EventType.OnClick, actions={button_18_event_0_action_0})
-button_18_event_0_action_0.triggered_by = button_18
-button_18.events = {button_18_event_0}
-button_19_event_0_action_0 = Delete(name="delete_class_9iv0v3742_mwta93ho_5ev", description="Delete class_9iv0v3742_mwta93ho_5ev", target_class=Category)
-button_19_event_0 = Event(name="onClick_button_19", event_type=EventType.OnClick, actions={button_19_event_0_action_0})
-button_19_event_0_action_0.triggered_by = button_19
-button_19.events = {button_19_event_0}
+action_button_15_event_0_action_0 = Create(name="create_class_9iv0v3742_mwta93ho_5ev", description="Create new class_9iv0v3742_mwta93ho_5ev", target_class=Category)
+action_button_15_event_0 = Event(name="onClick_action_button_15", event_type=EventType.OnClick, actions={action_button_15_event_0_action_0})
+action_button_15_event_0_action_0.triggered_by = action_button_15
+action_button_15.events = {action_button_15_event_0}
+action_button_16_event_0_action_0 = Update(name="update_class_9iv0v3742_mwta93ho_5ev", description="Update class_9iv0v3742_mwta93ho_5ev", target_class=Category)
+action_button_16_event_0 = Event(name="onClick_action_button_16", event_type=EventType.OnClick, actions={action_button_16_event_0_action_0})
+action_button_16_event_0_action_0.triggered_by = action_button_16
+action_button_16.events = {action_button_16_event_0}
+action_button_17_event_0_action_0 = Delete(name="delete_class_9iv0v3742_mwta93ho_5ev", description="Delete class_9iv0v3742_mwta93ho_5ev", target_class=Category)
+action_button_17_event_0 = Event(name="onClick_action_button_17", event_type=EventType.OnClick, actions={action_button_17_event_0_action_0})
+action_button_17_event_0_action_0.triggered_by = action_button_17
+action_button_17.events = {action_button_17_event_0}
+action_button_9_event_0_action_0 = Create(name="create_class_aokyvix9v_mwta93ho_82n", description="Create new class_aokyvix9v_mwta93ho_82n", target_class=SubGoal)
+action_button_9_event_0 = Event(name="onClick_action_button_9", event_type=EventType.OnClick, actions={action_button_9_event_0_action_0})
+action_button_9_event_0_action_0.triggered_by = action_button_9
+action_button_9.events = {action_button_9_event_0}
+action_button_12_event_0_action_0 = Create(name="create_class_kv587q4au_mwta93ho_rhu", description="Create new class_kv587q4au_mwta93ho_rhu", target_class=ProgressEntry)
+action_button_12_event_0 = Event(name="onClick_action_button_12", event_type=EventType.OnClick, actions={action_button_12_event_0_action_0})
+action_button_12_event_0_action_0.triggered_by = action_button_12
+action_button_12.events = {action_button_12_event_0}
 
 gui_module = Module(
     name="GUI_Module",
-    screens={wrapper, wrapper_2, wrapper_3, wrapper_4, wrapper_5}
+    screens={i4bmm1, icw9m8, in9bt, iund, iw7qpo}
 )
 
 # GUI Model
